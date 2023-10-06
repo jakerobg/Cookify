@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D4BCC1222AD04DC9004E3C6B /* CookifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BCC1212AD04DC9004E3C6B /* CookifyApp.swift */; };
+		D4BCC1242AD04DC9004E3C6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BCC1232AD04DC9004E3C6B /* ContentView.swift */; };
+		D4BCC1262AD04DD2004E3C6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4BCC1252AD04DD2004E3C6B /* Assets.xcassets */; };
+		D4BCC1292AD04DD2004E3C6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4BCC1282AD04DD2004E3C6B /* Preview Assets.xcassets */; };
+		D4BCC1332AD04DD3004E3C6B /* CookifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BCC1322AD04DD3004E3C6B /* CookifyTests.swift */; };
+		D4BCC13D2AD04DD3004E3C6B /* CookifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BCC13C2AD04DD3004E3C6B /* CookifyUITests.swift */; };
+		D4BCC13F2AD04DD3004E3C6B /* CookifyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BCC13E2AD04DD3004E3C6B /* CookifyUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4BCC12F2AD04DD3004E3C6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4BCC1162AD04DC9004E3C6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4BCC11D2AD04DC9004E3C6B;
+			remoteInfo = Cookify;
+		};
+		D4BCC1392AD04DD3004E3C6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4BCC1162AD04DC9004E3C6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4BCC11D2AD04DC9004E3C6B;
+			remoteInfo = Cookify;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D4BCC11E2AD04DC9004E3C6B /* Cookify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cookify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4BCC1212AD04DC9004E3C6B /* CookifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookifyApp.swift; sourceTree = "<group>"; };
+		D4BCC1232AD04DC9004E3C6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D4BCC1252AD04DD2004E3C6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4BCC1282AD04DD2004E3C6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D4BCC12E2AD04DD3004E3C6B /* CookifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4BCC1322AD04DD3004E3C6B /* CookifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookifyTests.swift; sourceTree = "<group>"; };
+		D4BCC1382AD04DD3004E3C6B /* CookifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4BCC13C2AD04DD3004E3C6B /* CookifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookifyUITests.swift; sourceTree = "<group>"; };
+		D4BCC13E2AD04DD3004E3C6B /* CookifyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookifyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4BCC11B2AD04DC9004E3C6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4BCC12B2AD04DD3004E3C6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4BCC1352AD04DD3004E3C6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4BCC1152AD04DC9004E3C6B = {
+			isa = PBXGroup;
+			children = (
+				D4BCC1202AD04DC9004E3C6B /* Cookify */,
+				D4BCC1312AD04DD3004E3C6B /* CookifyTests */,
+				D4BCC13B2AD04DD3004E3C6B /* CookifyUITests */,
+				D4BCC11F2AD04DC9004E3C6B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4BCC11F2AD04DC9004E3C6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4BCC11E2AD04DC9004E3C6B /* Cookify.app */,
+				D4BCC12E2AD04DD3004E3C6B /* CookifyTests.xctest */,
+				D4BCC1382AD04DD3004E3C6B /* CookifyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4BCC1202AD04DC9004E3C6B /* Cookify */ = {
+			isa = PBXGroup;
+			children = (
+				D4BCC1212AD04DC9004E3C6B /* CookifyApp.swift */,
+				D4BCC1232AD04DC9004E3C6B /* ContentView.swift */,
+				D4BCC1252AD04DD2004E3C6B /* Assets.xcassets */,
+				D4BCC1272AD04DD2004E3C6B /* Preview Content */,
+			);
+			path = Cookify;
+			sourceTree = "<group>";
+		};
+		D4BCC1272AD04DD2004E3C6B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D4BCC1282AD04DD2004E3C6B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D4BCC1312AD04DD3004E3C6B /* CookifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				D4BCC1322AD04DD3004E3C6B /* CookifyTests.swift */,
+			);
+			path = CookifyTests;
+			sourceTree = "<group>";
+		};
+		D4BCC13B2AD04DD3004E3C6B /* CookifyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D4BCC13C2AD04DD3004E3C6B /* CookifyUITests.swift */,
+				D4BCC13E2AD04DD3004E3C6B /* CookifyUITestsLaunchTests.swift */,
+			);
+			path = CookifyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4BCC11D2AD04DC9004E3C6B /* Cookify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4BCC1422AD04DD3004E3C6B /* Build configuration list for PBXNativeTarget "Cookify" */;
+			buildPhases = (
+				D4BCC11A2AD04DC9004E3C6B /* Sources */,
+				D4BCC11B2AD04DC9004E3C6B /* Frameworks */,
+				D4BCC11C2AD04DC9004E3C6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cookify;
+			productName = Cookify;
+			productReference = D4BCC11E2AD04DC9004E3C6B /* Cookify.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D4BCC12D2AD04DD3004E3C6B /* CookifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4BCC1452AD04DD3004E3C6B /* Build configuration list for PBXNativeTarget "CookifyTests" */;
+			buildPhases = (
+				D4BCC12A2AD04DD3004E3C6B /* Sources */,
+				D4BCC12B2AD04DD3004E3C6B /* Frameworks */,
+				D4BCC12C2AD04DD3004E3C6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4BCC1302AD04DD3004E3C6B /* PBXTargetDependency */,
+			);
+			name = CookifyTests;
+			productName = CookifyTests;
+			productReference = D4BCC12E2AD04DD3004E3C6B /* CookifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D4BCC1372AD04DD3004E3C6B /* CookifyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4BCC1482AD04DD3004E3C6B /* Build configuration list for PBXNativeTarget "CookifyUITests" */;
+			buildPhases = (
+				D4BCC1342AD04DD3004E3C6B /* Sources */,
+				D4BCC1352AD04DD3004E3C6B /* Frameworks */,
+				D4BCC1362AD04DD3004E3C6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4BCC13A2AD04DD3004E3C6B /* PBXTargetDependency */,
+			);
+			name = CookifyUITests;
+			productName = CookifyUITests;
+			productReference = D4BCC1382AD04DD3004E3C6B /* CookifyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4BCC1162AD04DC9004E3C6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					D4BCC11D2AD04DC9004E3C6B = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					D4BCC12D2AD04DD3004E3C6B = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = D4BCC11D2AD04DC9004E3C6B;
+					};
+					D4BCC1372AD04DD3004E3C6B = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = D4BCC11D2AD04DC9004E3C6B;
+					};
+				};
+			};
+			buildConfigurationList = D4BCC1192AD04DC9004E3C6B /* Build configuration list for PBXProject "Cookify" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4BCC1152AD04DC9004E3C6B;
+			productRefGroup = D4BCC11F2AD04DC9004E3C6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4BCC11D2AD04DC9004E3C6B /* Cookify */,
+				D4BCC12D2AD04DD3004E3C6B /* CookifyTests */,
+				D4BCC1372AD04DD3004E3C6B /* CookifyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4BCC11C2AD04DC9004E3C6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4BCC1292AD04DD2004E3C6B /* Preview Assets.xcassets in Resources */,
+				D4BCC1262AD04DD2004E3C6B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4BCC12C2AD04DD3004E3C6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4BCC1362AD04DD3004E3C6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4BCC11A2AD04DC9004E3C6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4BCC1242AD04DC9004E3C6B /* ContentView.swift in Sources */,
+				D4BCC1222AD04DC9004E3C6B /* CookifyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4BCC12A2AD04DD3004E3C6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4BCC1332AD04DD3004E3C6B /* CookifyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4BCC1342AD04DD3004E3C6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4BCC13D2AD04DD3004E3C6B /* CookifyUITests.swift in Sources */,
+				D4BCC13F2AD04DD3004E3C6B /* CookifyUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4BCC1302AD04DD3004E3C6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4BCC11D2AD04DC9004E3C6B /* Cookify */;
+			targetProxy = D4BCC12F2AD04DD3004E3C6B /* PBXContainerItemProxy */;
+		};
+		D4BCC13A2AD04DD3004E3C6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4BCC11D2AD04DC9004E3C6B /* Cookify */;
+			targetProxy = D4BCC1392AD04DD3004E3C6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D4BCC1402AD04DD3004E3C6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D4BCC1412AD04DD3004E3C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D4BCC1432AD04DD3004E3C6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Cookify/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "midd-seminar.Cookify";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D4BCC1442AD04DD3004E3C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Cookify/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "midd-seminar.Cookify";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D4BCC1462AD04DD3004E3C6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "midd-seminar.CookifyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cookify.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cookify";
+			};
+			name = Debug;
+		};
+		D4BCC1472AD04DD3004E3C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "midd-seminar.CookifyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cookify.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cookify";
+			};
+			name = Release;
+		};
+		D4BCC1492AD04DD3004E3C6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "midd-seminar.CookifyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cookify;
+			};
+			name = Debug;
+		};
+		D4BCC14A2AD04DD3004E3C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "midd-seminar.CookifyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cookify;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4BCC1192AD04DC9004E3C6B /* Build configuration list for PBXProject "Cookify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4BCC1402AD04DD3004E3C6B /* Debug */,
+				D4BCC1412AD04DD3004E3C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4BCC1422AD04DD3004E3C6B /* Build configuration list for PBXNativeTarget "Cookify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4BCC1432AD04DD3004E3C6B /* Debug */,
+				D4BCC1442AD04DD3004E3C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4BCC1452AD04DD3004E3C6B /* Build configuration list for PBXNativeTarget "CookifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4BCC1462AD04DD3004E3C6B /* Debug */,
+				D4BCC1472AD04DD3004E3C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4BCC1482AD04DD3004E3C6B /* Build configuration list for PBXNativeTarget "CookifyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4BCC1492AD04DD3004E3C6B /* Debug */,
+				D4BCC14A2AD04DD3004E3C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4BCC1162AD04DC9004E3C6B /* Project object */;
+}
