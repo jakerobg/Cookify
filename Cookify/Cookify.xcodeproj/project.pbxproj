@@ -94,9 +94,10 @@
 		D4BCC1202AD04DC9004E3C6B /* Cookify */ = {
 			isa = PBXGroup;
 			children = (
-				D4BCC1212AD04DC9004E3C6B /* CookifyApp.swift */,
-				D4BCC1232AD04DC9004E3C6B /* ContentView.swift */,
-				D4BCC1252AD04DD2004E3C6B /* Assets.xcassets */,
+				F359A2282AD84A1F008C96FA /* SupportingFiles */,
+				F359A2262AD849F4008C96FA /* Resources */,
+				F359A2252AD849E6008C96FA /* Config */,
+				F359A21E2AD8497C008C96FA /* CookifyCode */,
 				D4BCC1272AD04DD2004E3C6B /* Preview Content */,
 			);
 			path = Cookify;
@@ -125,6 +126,101 @@
 				D4BCC13E2AD04DD3004E3C6B /* CookifyUITestsLaunchTests.swift */,
 			);
 			path = CookifyUITests;
+			sourceTree = "<group>";
+		};
+		F359A21E2AD8497C008C96FA /* CookifyCode */ = {
+			isa = PBXGroup;
+			children = (
+				F359A21F2AD84998008C96FA /* Features */,
+			);
+			path = CookifyCode;
+			sourceTree = "<group>";
+		};
+		F359A21F2AD84998008C96FA /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				F359A2272AD84A05008C96FA /* Common */,
+				F359A2242AD849CA008C96FA /* Post */,
+				F359A2232AD849C4008C96FA /* Profile */,
+				F359A2222AD849B0008C96FA /* NewRecipe */,
+				F359A2212AD849A5008C96FA /* Feed */,
+				F359A2202AD8499F008C96FA /* Login */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		F359A2202AD8499F008C96FA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F359A2212AD849A5008C96FA /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		F359A2222AD849B0008C96FA /* NewRecipe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NewRecipe;
+			sourceTree = "<group>";
+		};
+		F359A2232AD849C4008C96FA /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F359A2242AD849CA008C96FA /* Post */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		F359A2252AD849E6008C96FA /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		F359A2262AD849F4008C96FA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D4BCC1252AD04DD2004E3C6B /* Assets.xcassets */,
+				F359A2292AD84AD7008C96FA /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F359A2272AD84A05008C96FA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F359A2282AD84A1F008C96FA /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D4BCC1212AD04DC9004E3C6B /* CookifyApp.swift */,
+				D4BCC1232AD04DC9004E3C6B /* ContentView.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F359A2292AD84AD7008C96FA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
