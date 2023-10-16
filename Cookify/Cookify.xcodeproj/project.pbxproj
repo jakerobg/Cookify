@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D44EAF592AD71739004E8365 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EAF582AD71739004E8365 /* LoginScreen.swift */; };
+		D44EAF612AD7596D004E8365 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EAF602AD7596D004E8365 /* LoginViewModel.swift */; };
+		D44EAF632AD75AD1004E8365 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EAF622AD75AD1004E8365 /* LoginRequest.swift */; };
+		D44EAF652AD75B27004E8365 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EAF642AD75B27004E8365 /* LoginResponse.swift */; };
+		D44EAF672AD75B7F004E8365 /* LoginAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EAF662AD75B7F004E8365 /* LoginAction.swift */; };
+		D45525712ADB498E00F98872 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45525702ADB498E00F98872 /* SignUpScreen.swift */; };
+		D45525732ADB49AC00F98872 /* SignUpAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45525722ADB49AC00F98872 /* SignUpAction.swift */; };
+		D45525752ADB49CC00F98872 /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45525742ADB49CC00F98872 /* SignUpRequest.swift */; };
+		D45525772ADB49D800F98872 /* SignUpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45525762ADB49D800F98872 /* SignUpResponse.swift */; };
+		D45525792ADB49EB00F98872 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45525782ADB49EB00F98872 /* SignUpViewModel.swift */; };
 		D4BCC1222AD04DC9004E3C6B /* CookifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BCC1212AD04DC9004E3C6B /* CookifyApp.swift */; };
 		D4BCC1242AD04DC9004E3C6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BCC1232AD04DC9004E3C6B /* ContentView.swift */; };
 		D4BCC1262AD04DD2004E3C6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4BCC1252AD04DD2004E3C6B /* Assets.xcassets */; };
@@ -34,6 +44,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D44EAF582AD71739004E8365 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		D44EAF602AD7596D004E8365 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		D44EAF622AD75AD1004E8365 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		D44EAF642AD75B27004E8365 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		D44EAF662AD75B7F004E8365 /* LoginAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAction.swift; sourceTree = "<group>"; };
+		D45525702ADB498E00F98872 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
+		D45525722ADB49AC00F98872 /* SignUpAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpAction.swift; sourceTree = "<group>"; };
+		D45525742ADB49CC00F98872 /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
+		D45525762ADB49D800F98872 /* SignUpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResponse.swift; sourceTree = "<group>"; };
+		D45525782ADB49EB00F98872 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		D4BCC11E2AD04DC9004E3C6B /* Cookify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cookify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4BCC1212AD04DC9004E3C6B /* CookifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookifyApp.swift; sourceTree = "<group>"; };
 		D4BCC1232AD04DC9004E3C6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +91,127 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D43468D82ADCBFE900E39EFB /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				D43468D92ADCBFF100E39EFB /* Features */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		D43468D92ADCBFF100E39EFB /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				D45525682ADB48C600F98872 /* Signup */,
+				D44EAF5A2AD7570E004E8365 /* Login */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		D44EAF5A2AD7570E004E8365 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D44EAF5F2AD75782004E8365 /* Screens */,
+				D44EAF5E2AD75778004E8365 /* Actions */,
+				D44EAF5C2AD75733004E8365 /* Views */,
+				D44EAF5B2AD75724004E8365 /* Models */,
+				D44EAF5D2AD7573A004E8365 /* ViewModels */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D44EAF5B2AD75724004E8365 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D44EAF622AD75AD1004E8365 /* LoginRequest.swift */,
+				D44EAF642AD75B27004E8365 /* LoginResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D44EAF5C2AD75733004E8365 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D44EAF5D2AD7573A004E8365 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D44EAF602AD7596D004E8365 /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D44EAF5E2AD75778004E8365 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				D44EAF662AD75B7F004E8365 /* LoginAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		D44EAF5F2AD75782004E8365 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				D44EAF582AD71739004E8365 /* LoginScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		D45525682ADB48C600F98872 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				D45525692ADB48D200F98872 /* Screens */,
+				D455256A2ADB48D700F98872 /* Actions */,
+				D455256B2ADB48DD00F98872 /* Views */,
+				D455256C2ADB48E300F98872 /* Models */,
+				D455256D2ADB491D00F98872 /* ViewModels */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		D45525692ADB48D200F98872 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				D45525702ADB498E00F98872 /* SignUpScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		D455256A2ADB48D700F98872 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				D45525722ADB49AC00F98872 /* SignUpAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		D455256B2ADB48DD00F98872 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D455256C2ADB48E300F98872 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D45525742ADB49CC00F98872 /* SignUpRequest.swift */,
+				D45525762ADB49D800F98872 /* SignUpResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D455256D2ADB491D00F98872 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D45525782ADB49EB00F98872 /* SignUpViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		D4BCC1152AD04DC9004E3C6B = {
 			isa = PBXGroup;
 			children = (
@@ -94,10 +235,17 @@
 		D4BCC1202AD04DC9004E3C6B /* Cookify */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
+				D43468D82ADCBFE900E39EFB /* Code */,
+				D4BCC1212AD04DC9004E3C6B /* CookifyApp.swift */,
+				D4BCC1232AD04DC9004E3C6B /* ContentView.swift */,
+				D4BCC1252AD04DD2004E3C6B /* Assets.xcassets */,
+=======
 				F359A2282AD84A1F008C96FA /* SupportingFiles */,
 				F359A2262AD849F4008C96FA /* Resources */,
 				F359A2252AD849E6008C96FA /* Config */,
 				F359A21E2AD8497C008C96FA /* CookifyCode */,
+>>>>>>> main
 				D4BCC1272AD04DD2004E3C6B /* Preview Content */,
 			);
 			path = Cookify;
@@ -353,8 +501,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D44EAF612AD7596D004E8365 /* LoginViewModel.swift in Sources */,
+				D45525732ADB49AC00F98872 /* SignUpAction.swift in Sources */,
 				D4BCC1242AD04DC9004E3C6B /* ContentView.swift in Sources */,
+				D45525772ADB49D800F98872 /* SignUpResponse.swift in Sources */,
+				D44EAF652AD75B27004E8365 /* LoginResponse.swift in Sources */,
+				D45525712ADB498E00F98872 /* SignUpScreen.swift in Sources */,
 				D4BCC1222AD04DC9004E3C6B /* CookifyApp.swift in Sources */,
+				D44EAF632AD75AD1004E8365 /* LoginRequest.swift in Sources */,
+				D45525752ADB49CC00F98872 /* SignUpRequest.swift in Sources */,
+				D44EAF592AD71739004E8365 /* LoginScreen.swift in Sources */,
+				D45525792ADB49EB00F98872 /* SignUpViewModel.swift in Sources */,
+				D44EAF672AD75B7F004E8365 /* LoginAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +676,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Cookify/Preview Content\"";
+				DEVELOPMENT_TEAM = XZC6H9SP7A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -546,6 +705,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Cookify/Preview Content\"";
+				DEVELOPMENT_TEAM = XZC6H9SP7A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
