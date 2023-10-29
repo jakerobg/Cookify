@@ -7,81 +7,81 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D44EAF592AD71739004E8365 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EAF582AD71739004E8365 /* LoginScreen.swift */; };
-		D44EAF612AD7596D004E8365 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EAF602AD7596D004E8365 /* LoginViewModel.swift */; };
-		D44EAF632AD75AD1004E8365 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EAF622AD75AD1004E8365 /* LoginRequest.swift */; };
-		D44EAF652AD75B27004E8365 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EAF642AD75B27004E8365 /* LoginResponse.swift */; };
-		D44EAF672AD75B7F004E8365 /* LoginAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EAF662AD75B7F004E8365 /* LoginAction.swift */; };
-		D45525712ADB498E00F98872 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45525702ADB498E00F98872 /* SignUpScreen.swift */; };
-		D45525732ADB49AC00F98872 /* SignUpAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45525722ADB49AC00F98872 /* SignUpAction.swift */; };
-		D45525752ADB49CC00F98872 /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45525742ADB49CC00F98872 /* SignUpRequest.swift */; };
-		D45525772ADB49D800F98872 /* SignUpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45525762ADB49D800F98872 /* SignUpResponse.swift */; };
-		D45525792ADB49EB00F98872 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45525782ADB49EB00F98872 /* SignUpViewModel.swift */; };
-		D4BCC1222AD04DC9004E3C6B /* CookifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BCC1212AD04DC9004E3C6B /* CookifyApp.swift */; };
-		D4BCC1242AD04DC9004E3C6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BCC1232AD04DC9004E3C6B /* ContentView.swift */; };
-		D4BCC1262AD04DD2004E3C6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4BCC1252AD04DD2004E3C6B /* Assets.xcassets */; };
-		D4BCC1292AD04DD2004E3C6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4BCC1282AD04DD2004E3C6B /* Preview Assets.xcassets */; };
-		D4BCC1332AD04DD3004E3C6B /* CookifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BCC1322AD04DD3004E3C6B /* CookifyTests.swift */; };
-		D4BCC13D2AD04DD3004E3C6B /* CookifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BCC13C2AD04DD3004E3C6B /* CookifyUITests.swift */; };
-		D4BCC13F2AD04DD3004E3C6B /* CookifyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BCC13E2AD04DD3004E3C6B /* CookifyUITestsLaunchTests.swift */; };
+		F33ACA8A2AEECB3300F9742F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33ACA6E2AEECB3300F9742F /* Assets.xcassets */; };
+		F33ACA8B2AEECB3300F9742F /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33ACA732AEECB3300F9742F /* SignUpViewModel.swift */; };
+		F33ACA8C2AEECB3300F9742F /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33ACA752AEECB3300F9742F /* SignUpRequest.swift */; };
+		F33ACA8D2AEECB3300F9742F /* SignUpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33ACA762AEECB3300F9742F /* SignUpResponse.swift */; };
+		F33ACA8E2AEECB3300F9742F /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33ACA782AEECB3300F9742F /* SignUpScreen.swift */; };
+		F33ACA8F2AEECB3300F9742F /* SignUpAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33ACA7A2AEECB3300F9742F /* SignUpAction.swift */; };
+		F33ACA902AEECB3300F9742F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33ACA7D2AEECB3300F9742F /* LoginViewModel.swift */; };
+		F33ACA912AEECB3300F9742F /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33ACA7F2AEECB3300F9742F /* LoginRequest.swift */; };
+		F33ACA922AEECB3300F9742F /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33ACA802AEECB3300F9742F /* LoginResponse.swift */; };
+		F33ACA932AEECB3300F9742F /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33ACA822AEECB3300F9742F /* LoginScreen.swift */; };
+		F33ACA942AEECB3300F9742F /* LoginAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33ACA842AEECB3300F9742F /* LoginAction.swift */; };
+		F33ACA952AEECB3300F9742F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33ACA862AEECB3300F9742F /* Preview Assets.xcassets */; };
+		F33ACA962AEECB3300F9742F /* CookifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33ACA882AEECB3300F9742F /* CookifyApp.swift */; };
+		F33ACA972AEECB3300F9742F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33ACA892AEECB3300F9742F /* ContentView.swift */; };
+		F35640462AEEBA54005C9AA6 /* CookifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35640452AEEBA54005C9AA6 /* CookifyTests.swift */; };
+		F35640502AEEBA54005C9AA6 /* CookifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F356404F2AEEBA54005C9AA6 /* CookifyUITests.swift */; };
+		F35640522AEEBA54005C9AA6 /* CookifyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35640512AEEBA54005C9AA6 /* CookifyUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D4BCC12F2AD04DD3004E3C6B /* PBXContainerItemProxy */ = {
+		F35640422AEEBA54005C9AA6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D4BCC1162AD04DC9004E3C6B /* Project object */;
+			containerPortal = F35640292AEEBA51005C9AA6 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D4BCC11D2AD04DC9004E3C6B;
+			remoteGlobalIDString = F35640302AEEBA51005C9AA6;
 			remoteInfo = Cookify;
 		};
-		D4BCC1392AD04DD3004E3C6B /* PBXContainerItemProxy */ = {
+		F356404C2AEEBA54005C9AA6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D4BCC1162AD04DC9004E3C6B /* Project object */;
+			containerPortal = F35640292AEEBA51005C9AA6 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D4BCC11D2AD04DC9004E3C6B;
+			remoteGlobalIDString = F35640302AEEBA51005C9AA6;
 			remoteInfo = Cookify;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D44EAF582AD71739004E8365 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
-		D44EAF602AD7596D004E8365 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		D44EAF622AD75AD1004E8365 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
-		D44EAF642AD75B27004E8365 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
-		D44EAF662AD75B7F004E8365 /* LoginAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAction.swift; sourceTree = "<group>"; };
-		D45525702ADB498E00F98872 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
-		D45525722ADB49AC00F98872 /* SignUpAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpAction.swift; sourceTree = "<group>"; };
-		D45525742ADB49CC00F98872 /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
-		D45525762ADB49D800F98872 /* SignUpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResponse.swift; sourceTree = "<group>"; };
-		D45525782ADB49EB00F98872 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
-		D4BCC11E2AD04DC9004E3C6B /* Cookify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cookify.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4BCC1212AD04DC9004E3C6B /* CookifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookifyApp.swift; sourceTree = "<group>"; };
-		D4BCC1232AD04DC9004E3C6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D4BCC1252AD04DD2004E3C6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D4BCC1282AD04DD2004E3C6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D4BCC12E2AD04DD3004E3C6B /* CookifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4BCC1322AD04DD3004E3C6B /* CookifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookifyTests.swift; sourceTree = "<group>"; };
-		D4BCC1382AD04DD3004E3C6B /* CookifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4BCC13C2AD04DD3004E3C6B /* CookifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookifyUITests.swift; sourceTree = "<group>"; };
-		D4BCC13E2AD04DD3004E3C6B /* CookifyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookifyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F33ACA6E2AEECB3300F9742F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F33ACA732AEECB3300F9742F /* SignUpViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		F33ACA752AEECB3300F9742F /* SignUpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
+		F33ACA762AEECB3300F9742F /* SignUpResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpResponse.swift; sourceTree = "<group>"; };
+		F33ACA782AEECB3300F9742F /* SignUpScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
+		F33ACA7A2AEECB3300F9742F /* SignUpAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpAction.swift; sourceTree = "<group>"; };
+		F33ACA7D2AEECB3300F9742F /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F33ACA7F2AEECB3300F9742F /* LoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		F33ACA802AEECB3300F9742F /* LoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		F33ACA822AEECB3300F9742F /* LoginScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		F33ACA842AEECB3300F9742F /* LoginAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAction.swift; sourceTree = "<group>"; };
+		F33ACA862AEECB3300F9742F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F33ACA882AEECB3300F9742F /* CookifyApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookifyApp.swift; sourceTree = "<group>"; };
+		F33ACA892AEECB3300F9742F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F35640312AEEBA51005C9AA6 /* Cookify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cookify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F35640412AEEBA54005C9AA6 /* CookifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F35640452AEEBA54005C9AA6 /* CookifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookifyTests.swift; sourceTree = "<group>"; };
+		F356404B2AEEBA54005C9AA6 /* CookifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F356404F2AEEBA54005C9AA6 /* CookifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookifyUITests.swift; sourceTree = "<group>"; };
+		F35640512AEEBA54005C9AA6 /* CookifyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookifyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D4BCC11B2AD04DC9004E3C6B /* Frameworks */ = {
+		F356402E2AEEBA51005C9AA6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D4BCC12B2AD04DD3004E3C6B /* Frameworks */ = {
+		F356403E2AEEBA54005C9AA6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D4BCC1352AD04DD3004E3C6B /* Frameworks */ = {
+		F35640482AEEBA54005C9AA6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -91,296 +91,194 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D43468D82ADCBFE900E39EFB /* Code */ = {
+		F33ACA6C2AEECB3300F9742F /* Cookify */ = {
 			isa = PBXGroup;
 			children = (
-				D43468D92ADCBFF100E39EFB /* Features */,
-			);
-			path = Code;
-			sourceTree = "<group>";
-		};
-		D43468D92ADCBFF100E39EFB /* Features */ = {
-			isa = PBXGroup;
-			children = (
-				D45525682ADB48C600F98872 /* Signup */,
-				D44EAF5A2AD7570E004E8365 /* Login */,
-			);
-			path = Features;
-			sourceTree = "<group>";
-		};
-		D44EAF5A2AD7570E004E8365 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				D44EAF5F2AD75782004E8365 /* Screens */,
-				D44EAF5E2AD75778004E8365 /* Actions */,
-				D44EAF5C2AD75733004E8365 /* Views */,
-				D44EAF5B2AD75724004E8365 /* Models */,
-				D44EAF5D2AD7573A004E8365 /* ViewModels */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		D44EAF5B2AD75724004E8365 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				D44EAF622AD75AD1004E8365 /* LoginRequest.swift */,
-				D44EAF642AD75B27004E8365 /* LoginResponse.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		D44EAF5C2AD75733004E8365 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		D44EAF5D2AD7573A004E8365 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				D44EAF602AD7596D004E8365 /* LoginViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		D44EAF5E2AD75778004E8365 /* Actions */ = {
-			isa = PBXGroup;
-			children = (
-				D44EAF662AD75B7F004E8365 /* LoginAction.swift */,
-			);
-			path = Actions;
-			sourceTree = "<group>";
-		};
-		D44EAF5F2AD75782004E8365 /* Screens */ = {
-			isa = PBXGroup;
-			children = (
-				D44EAF582AD71739004E8365 /* LoginScreen.swift */,
-			);
-			path = Screens;
-			sourceTree = "<group>";
-		};
-		D45525682ADB48C600F98872 /* Signup */ = {
-			isa = PBXGroup;
-			children = (
-				D45525692ADB48D200F98872 /* Screens */,
-				D455256A2ADB48D700F98872 /* Actions */,
-				D455256B2ADB48DD00F98872 /* Views */,
-				D455256C2ADB48E300F98872 /* Models */,
-				D455256D2ADB491D00F98872 /* ViewModels */,
-			);
-			path = Signup;
-			sourceTree = "<group>";
-		};
-		D45525692ADB48D200F98872 /* Screens */ = {
-			isa = PBXGroup;
-			children = (
-				D45525702ADB498E00F98872 /* SignUpScreen.swift */,
-			);
-			path = Screens;
-			sourceTree = "<group>";
-		};
-		D455256A2ADB48D700F98872 /* Actions */ = {
-			isa = PBXGroup;
-			children = (
-				D45525722ADB49AC00F98872 /* SignUpAction.swift */,
-			);
-			path = Actions;
-			sourceTree = "<group>";
-		};
-		D455256B2ADB48DD00F98872 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		D455256C2ADB48E300F98872 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				D45525742ADB49CC00F98872 /* SignUpRequest.swift */,
-				D45525762ADB49D800F98872 /* SignUpResponse.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		D455256D2ADB491D00F98872 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				D45525782ADB49EB00F98872 /* SignUpViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		D4BCC1152AD04DC9004E3C6B = {
-			isa = PBXGroup;
-			children = (
-				D4BCC1202AD04DC9004E3C6B /* Cookify */,
-				D4BCC1312AD04DD3004E3C6B /* CookifyTests */,
-				D4BCC13B2AD04DD3004E3C6B /* CookifyUITests */,
-				D4BCC11F2AD04DC9004E3C6B /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		D4BCC11F2AD04DC9004E3C6B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D4BCC11E2AD04DC9004E3C6B /* Cookify.app */,
-				D4BCC12E2AD04DD3004E3C6B /* CookifyTests.xctest */,
-				D4BCC1382AD04DD3004E3C6B /* CookifyUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D4BCC1202AD04DC9004E3C6B /* Cookify */ = {
-			isa = PBXGroup;
-			children = (
-<<<<<<< HEAD
-				D43468D82ADCBFE900E39EFB /* Code */,
-				D4BCC1212AD04DC9004E3C6B /* CookifyApp.swift */,
-				D4BCC1232AD04DC9004E3C6B /* ContentView.swift */,
-				D4BCC1252AD04DD2004E3C6B /* Assets.xcassets */,
-=======
-				F359A2282AD84A1F008C96FA /* SupportingFiles */,
-				F359A2262AD849F4008C96FA /* Resources */,
-				F359A2252AD849E6008C96FA /* Config */,
-				F359A21E2AD8497C008C96FA /* CookifyCode */,
->>>>>>> main
-				D4BCC1272AD04DD2004E3C6B /* Preview Content */,
+				F33ACA6D2AEECB3300F9742F /* Resources */,
+				F33ACA6F2AEECB3300F9742F /* Code */,
+				F33ACA852AEECB3300F9742F /* Preview Content */,
+				F33ACA872AEECB3300F9742F /* SupportingFiles */,
 			);
 			path = Cookify;
 			sourceTree = "<group>";
 		};
-		D4BCC1272AD04DD2004E3C6B /* Preview Content */ = {
+		F33ACA6D2AEECB3300F9742F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D4BCC1282AD04DD2004E3C6B /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		D4BCC1312AD04DD3004E3C6B /* CookifyTests */ = {
-			isa = PBXGroup;
-			children = (
-				D4BCC1322AD04DD3004E3C6B /* CookifyTests.swift */,
-			);
-			path = CookifyTests;
-			sourceTree = "<group>";
-		};
-		D4BCC13B2AD04DD3004E3C6B /* CookifyUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D4BCC13C2AD04DD3004E3C6B /* CookifyUITests.swift */,
-				D4BCC13E2AD04DD3004E3C6B /* CookifyUITestsLaunchTests.swift */,
-			);
-			path = CookifyUITests;
-			sourceTree = "<group>";
-		};
-		F359A21E2AD8497C008C96FA /* CookifyCode */ = {
-			isa = PBXGroup;
-			children = (
-				F359A21F2AD84998008C96FA /* Features */,
-			);
-			path = CookifyCode;
-			sourceTree = "<group>";
-		};
-		F359A21F2AD84998008C96FA /* Features */ = {
-			isa = PBXGroup;
-			children = (
-				F359A2272AD84A05008C96FA /* Common */,
-				F359A2242AD849CA008C96FA /* Post */,
-				F359A2232AD849C4008C96FA /* Profile */,
-				F359A2222AD849B0008C96FA /* NewRecipe */,
-				F359A2212AD849A5008C96FA /* Feed */,
-				F359A2202AD8499F008C96FA /* Login */,
-			);
-			path = Features;
-			sourceTree = "<group>";
-		};
-		F359A2202AD8499F008C96FA /* Login */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		F359A2212AD849A5008C96FA /* Feed */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Feed;
-			sourceTree = "<group>";
-		};
-		F359A2222AD849B0008C96FA /* NewRecipe */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NewRecipe;
-			sourceTree = "<group>";
-		};
-		F359A2232AD849C4008C96FA /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		F359A2242AD849CA008C96FA /* Post */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Post;
-			sourceTree = "<group>";
-		};
-		F359A2252AD849E6008C96FA /* Config */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
-		F359A2262AD849F4008C96FA /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				D4BCC1252AD04DD2004E3C6B /* Assets.xcassets */,
-				F359A2292AD84AD7008C96FA /* Images */,
+				F33ACA6E2AEECB3300F9742F /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		F359A2272AD84A05008C96FA /* Common */ = {
+		F33ACA6F2AEECB3300F9742F /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				F33ACA702AEECB3300F9742F /* Features */,
 			);
-			path = Common;
+			path = Code;
 			sourceTree = "<group>";
 		};
-		F359A2282AD84A1F008C96FA /* SupportingFiles */ = {
+		F33ACA702AEECB3300F9742F /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				D4BCC1212AD04DC9004E3C6B /* CookifyApp.swift */,
-				D4BCC1232AD04DC9004E3C6B /* ContentView.swift */,
+				F33ACA712AEECB3300F9742F /* Signup */,
+				F33ACA7B2AEECB3300F9742F /* Login */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		F33ACA712AEECB3300F9742F /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				F33ACA722AEECB3300F9742F /* ViewModels */,
+				F33ACA742AEECB3300F9742F /* Models */,
+				F33ACA772AEECB3300F9742F /* Screens */,
+				F33ACA792AEECB3300F9742F /* Actions */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		F33ACA722AEECB3300F9742F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F33ACA732AEECB3300F9742F /* SignUpViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F33ACA742AEECB3300F9742F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F33ACA752AEECB3300F9742F /* SignUpRequest.swift */,
+				F33ACA762AEECB3300F9742F /* SignUpResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F33ACA772AEECB3300F9742F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F33ACA782AEECB3300F9742F /* SignUpScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F33ACA792AEECB3300F9742F /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				F33ACA7A2AEECB3300F9742F /* SignUpAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		F33ACA7B2AEECB3300F9742F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F33ACA7C2AEECB3300F9742F /* ViewModels */,
+				F33ACA7E2AEECB3300F9742F /* Models */,
+				F33ACA812AEECB3300F9742F /* Screens */,
+				F33ACA832AEECB3300F9742F /* Actions */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F33ACA7C2AEECB3300F9742F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F33ACA7D2AEECB3300F9742F /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F33ACA7E2AEECB3300F9742F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F33ACA7F2AEECB3300F9742F /* LoginRequest.swift */,
+				F33ACA802AEECB3300F9742F /* LoginResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F33ACA812AEECB3300F9742F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F33ACA822AEECB3300F9742F /* LoginScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F33ACA832AEECB3300F9742F /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				F33ACA842AEECB3300F9742F /* LoginAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		F33ACA852AEECB3300F9742F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F33ACA862AEECB3300F9742F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F33ACA872AEECB3300F9742F /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F33ACA882AEECB3300F9742F /* CookifyApp.swift */,
+				F33ACA892AEECB3300F9742F /* ContentView.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
-		F359A2292AD84AD7008C96FA /* Images */ = {
+		F35640282AEEBA51005C9AA6 = {
 			isa = PBXGroup;
 			children = (
+				F33ACA6C2AEECB3300F9742F /* Cookify */,
+				F35640442AEEBA54005C9AA6 /* CookifyTests */,
+				F356404E2AEEBA54005C9AA6 /* CookifyUITests */,
+				F35640322AEEBA51005C9AA6 /* Products */,
 			);
-			path = Images;
+			sourceTree = "<group>";
+		};
+		F35640322AEEBA51005C9AA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F35640312AEEBA51005C9AA6 /* Cookify.app */,
+				F35640412AEEBA54005C9AA6 /* CookifyTests.xctest */,
+				F356404B2AEEBA54005C9AA6 /* CookifyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F35640442AEEBA54005C9AA6 /* CookifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				F35640452AEEBA54005C9AA6 /* CookifyTests.swift */,
+			);
+			path = CookifyTests;
+			sourceTree = "<group>";
+		};
+		F356404E2AEEBA54005C9AA6 /* CookifyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F356404F2AEEBA54005C9AA6 /* CookifyUITests.swift */,
+				F35640512AEEBA54005C9AA6 /* CookifyUITestsLaunchTests.swift */,
+			);
+			path = CookifyUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D4BCC11D2AD04DC9004E3C6B /* Cookify */ = {
+		F35640302AEEBA51005C9AA6 /* Cookify */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4BCC1422AD04DD3004E3C6B /* Build configuration list for PBXNativeTarget "Cookify" */;
+			buildConfigurationList = F35640552AEEBA54005C9AA6 /* Build configuration list for PBXNativeTarget "Cookify" */;
 			buildPhases = (
-				D4BCC11A2AD04DC9004E3C6B /* Sources */,
-				D4BCC11B2AD04DC9004E3C6B /* Frameworks */,
-				D4BCC11C2AD04DC9004E3C6B /* Resources */,
+				F356402D2AEEBA51005C9AA6 /* Sources */,
+				F356402E2AEEBA51005C9AA6 /* Frameworks */,
+				F356402F2AEEBA51005C9AA6 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -388,69 +286,69 @@
 			);
 			name = Cookify;
 			productName = Cookify;
-			productReference = D4BCC11E2AD04DC9004E3C6B /* Cookify.app */;
+			productReference = F35640312AEEBA51005C9AA6 /* Cookify.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D4BCC12D2AD04DD3004E3C6B /* CookifyTests */ = {
+		F35640402AEEBA54005C9AA6 /* CookifyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4BCC1452AD04DD3004E3C6B /* Build configuration list for PBXNativeTarget "CookifyTests" */;
+			buildConfigurationList = F35640582AEEBA54005C9AA6 /* Build configuration list for PBXNativeTarget "CookifyTests" */;
 			buildPhases = (
-				D4BCC12A2AD04DD3004E3C6B /* Sources */,
-				D4BCC12B2AD04DD3004E3C6B /* Frameworks */,
-				D4BCC12C2AD04DD3004E3C6B /* Resources */,
+				F356403D2AEEBA54005C9AA6 /* Sources */,
+				F356403E2AEEBA54005C9AA6 /* Frameworks */,
+				F356403F2AEEBA54005C9AA6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D4BCC1302AD04DD3004E3C6B /* PBXTargetDependency */,
+				F35640432AEEBA54005C9AA6 /* PBXTargetDependency */,
 			);
 			name = CookifyTests;
 			productName = CookifyTests;
-			productReference = D4BCC12E2AD04DD3004E3C6B /* CookifyTests.xctest */;
+			productReference = F35640412AEEBA54005C9AA6 /* CookifyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D4BCC1372AD04DD3004E3C6B /* CookifyUITests */ = {
+		F356404A2AEEBA54005C9AA6 /* CookifyUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4BCC1482AD04DD3004E3C6B /* Build configuration list for PBXNativeTarget "CookifyUITests" */;
+			buildConfigurationList = F356405B2AEEBA54005C9AA6 /* Build configuration list for PBXNativeTarget "CookifyUITests" */;
 			buildPhases = (
-				D4BCC1342AD04DD3004E3C6B /* Sources */,
-				D4BCC1352AD04DD3004E3C6B /* Frameworks */,
-				D4BCC1362AD04DD3004E3C6B /* Resources */,
+				F35640472AEEBA54005C9AA6 /* Sources */,
+				F35640482AEEBA54005C9AA6 /* Frameworks */,
+				F35640492AEEBA54005C9AA6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D4BCC13A2AD04DD3004E3C6B /* PBXTargetDependency */,
+				F356404D2AEEBA54005C9AA6 /* PBXTargetDependency */,
 			);
 			name = CookifyUITests;
 			productName = CookifyUITests;
-			productReference = D4BCC1382AD04DD3004E3C6B /* CookifyUITests.xctest */;
+			productReference = F356404B2AEEBA54005C9AA6 /* CookifyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D4BCC1162AD04DC9004E3C6B /* Project object */ = {
+		F35640292AEEBA51005C9AA6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					D4BCC11D2AD04DC9004E3C6B = {
+					F35640302AEEBA51005C9AA6 = {
 						CreatedOnToolsVersion = 15.0;
 					};
-					D4BCC12D2AD04DD3004E3C6B = {
+					F35640402AEEBA54005C9AA6 = {
 						CreatedOnToolsVersion = 15.0;
-						TestTargetID = D4BCC11D2AD04DC9004E3C6B;
+						TestTargetID = F35640302AEEBA51005C9AA6;
 					};
-					D4BCC1372AD04DD3004E3C6B = {
+					F356404A2AEEBA54005C9AA6 = {
 						CreatedOnToolsVersion = 15.0;
-						TestTargetID = D4BCC11D2AD04DC9004E3C6B;
+						TestTargetID = F35640302AEEBA51005C9AA6;
 					};
 				};
 			};
-			buildConfigurationList = D4BCC1192AD04DC9004E3C6B /* Build configuration list for PBXProject "Cookify" */;
+			buildConfigurationList = F356402C2AEEBA51005C9AA6 /* Build configuration list for PBXProject "Cookify" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -458,36 +356,36 @@
 				en,
 				Base,
 			);
-			mainGroup = D4BCC1152AD04DC9004E3C6B;
-			productRefGroup = D4BCC11F2AD04DC9004E3C6B /* Products */;
+			mainGroup = F35640282AEEBA51005C9AA6;
+			productRefGroup = F35640322AEEBA51005C9AA6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D4BCC11D2AD04DC9004E3C6B /* Cookify */,
-				D4BCC12D2AD04DD3004E3C6B /* CookifyTests */,
-				D4BCC1372AD04DD3004E3C6B /* CookifyUITests */,
+				F35640302AEEBA51005C9AA6 /* Cookify */,
+				F35640402AEEBA54005C9AA6 /* CookifyTests */,
+				F356404A2AEEBA54005C9AA6 /* CookifyUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D4BCC11C2AD04DC9004E3C6B /* Resources */ = {
+		F356402F2AEEBA51005C9AA6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4BCC1292AD04DD2004E3C6B /* Preview Assets.xcassets in Resources */,
-				D4BCC1262AD04DD2004E3C6B /* Assets.xcassets in Resources */,
+				F33ACA952AEECB3300F9742F /* Preview Assets.xcassets in Resources */,
+				F33ACA8A2AEECB3300F9742F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D4BCC12C2AD04DD3004E3C6B /* Resources */ = {
+		F356403F2AEEBA54005C9AA6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D4BCC1362AD04DD3004E3C6B /* Resources */ = {
+		F35640492AEEBA54005C9AA6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -497,59 +395,59 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D4BCC11A2AD04DC9004E3C6B /* Sources */ = {
+		F356402D2AEEBA51005C9AA6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D44EAF612AD7596D004E8365 /* LoginViewModel.swift in Sources */,
-				D45525732ADB49AC00F98872 /* SignUpAction.swift in Sources */,
-				D4BCC1242AD04DC9004E3C6B /* ContentView.swift in Sources */,
-				D45525772ADB49D800F98872 /* SignUpResponse.swift in Sources */,
-				D44EAF652AD75B27004E8365 /* LoginResponse.swift in Sources */,
-				D45525712ADB498E00F98872 /* SignUpScreen.swift in Sources */,
-				D4BCC1222AD04DC9004E3C6B /* CookifyApp.swift in Sources */,
-				D44EAF632AD75AD1004E8365 /* LoginRequest.swift in Sources */,
-				D45525752ADB49CC00F98872 /* SignUpRequest.swift in Sources */,
-				D44EAF592AD71739004E8365 /* LoginScreen.swift in Sources */,
-				D45525792ADB49EB00F98872 /* SignUpViewModel.swift in Sources */,
-				D44EAF672AD75B7F004E8365 /* LoginAction.swift in Sources */,
+				F33ACA8B2AEECB3300F9742F /* SignUpViewModel.swift in Sources */,
+				F33ACA942AEECB3300F9742F /* LoginAction.swift in Sources */,
+				F33ACA972AEECB3300F9742F /* ContentView.swift in Sources */,
+				F33ACA8D2AEECB3300F9742F /* SignUpResponse.swift in Sources */,
+				F33ACA932AEECB3300F9742F /* LoginScreen.swift in Sources */,
+				F33ACA902AEECB3300F9742F /* LoginViewModel.swift in Sources */,
+				F33ACA8C2AEECB3300F9742F /* SignUpRequest.swift in Sources */,
+				F33ACA8F2AEECB3300F9742F /* SignUpAction.swift in Sources */,
+				F33ACA962AEECB3300F9742F /* CookifyApp.swift in Sources */,
+				F33ACA912AEECB3300F9742F /* LoginRequest.swift in Sources */,
+				F33ACA922AEECB3300F9742F /* LoginResponse.swift in Sources */,
+				F33ACA8E2AEECB3300F9742F /* SignUpScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D4BCC12A2AD04DD3004E3C6B /* Sources */ = {
+		F356403D2AEEBA54005C9AA6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4BCC1332AD04DD3004E3C6B /* CookifyTests.swift in Sources */,
+				F35640462AEEBA54005C9AA6 /* CookifyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D4BCC1342AD04DD3004E3C6B /* Sources */ = {
+		F35640472AEEBA54005C9AA6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4BCC13D2AD04DD3004E3C6B /* CookifyUITests.swift in Sources */,
-				D4BCC13F2AD04DD3004E3C6B /* CookifyUITestsLaunchTests.swift in Sources */,
+				F35640502AEEBA54005C9AA6 /* CookifyUITests.swift in Sources */,
+				F35640522AEEBA54005C9AA6 /* CookifyUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D4BCC1302AD04DD3004E3C6B /* PBXTargetDependency */ = {
+		F35640432AEEBA54005C9AA6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D4BCC11D2AD04DC9004E3C6B /* Cookify */;
-			targetProxy = D4BCC12F2AD04DD3004E3C6B /* PBXContainerItemProxy */;
+			target = F35640302AEEBA51005C9AA6 /* Cookify */;
+			targetProxy = F35640422AEEBA54005C9AA6 /* PBXContainerItemProxy */;
 		};
-		D4BCC13A2AD04DD3004E3C6B /* PBXTargetDependency */ = {
+		F356404D2AEEBA54005C9AA6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D4BCC11D2AD04DC9004E3C6B /* Cookify */;
-			targetProxy = D4BCC1392AD04DD3004E3C6B /* PBXContainerItemProxy */;
+			target = F35640302AEEBA51005C9AA6 /* Cookify */;
+			targetProxy = F356404C2AEEBA54005C9AA6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		D4BCC1402AD04DD3004E3C6B /* Debug */ = {
+		F35640532AEEBA54005C9AA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -612,7 +510,7 @@
 			};
 			name = Debug;
 		};
-		D4BCC1412AD04DD3004E3C6B /* Release */ = {
+		F35640542AEEBA54005C9AA6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -668,7 +566,7 @@
 			};
 			name = Release;
 		};
-		D4BCC1432AD04DD3004E3C6B /* Debug */ = {
+		F35640562AEEBA54005C9AA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -676,7 +574,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Cookify/Preview Content\"";
-				DEVELOPMENT_TEAM = XZC6H9SP7A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -689,7 +586,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "midd-seminar.Cookify";
+				PRODUCT_BUNDLE_IDENTIFIER = stravaforcooking.Cookify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -697,7 +594,7 @@
 			};
 			name = Debug;
 		};
-		D4BCC1442AD04DD3004E3C6B /* Release */ = {
+		F35640572AEEBA54005C9AA6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -705,7 +602,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Cookify/Preview Content\"";
-				DEVELOPMENT_TEAM = XZC6H9SP7A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -718,7 +614,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "midd-seminar.Cookify";
+				PRODUCT_BUNDLE_IDENTIFIER = stravaforcooking.Cookify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -726,7 +622,7 @@
 			};
 			name = Release;
 		};
-		D4BCC1462AD04DD3004E3C6B /* Debug */ = {
+		F35640592AEEBA54005C9AA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -736,7 +632,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "midd-seminar.CookifyTests";
+				PRODUCT_BUNDLE_IDENTIFIER = stravaforcooking.CookifyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -745,7 +641,7 @@
 			};
 			name = Debug;
 		};
-		D4BCC1472AD04DD3004E3C6B /* Release */ = {
+		F356405A2AEEBA54005C9AA6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -755,7 +651,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "midd-seminar.CookifyTests";
+				PRODUCT_BUNDLE_IDENTIFIER = stravaforcooking.CookifyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -764,7 +660,7 @@
 			};
 			name = Release;
 		};
-		D4BCC1492AD04DD3004E3C6B /* Debug */ = {
+		F356405C2AEEBA54005C9AA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -772,7 +668,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "midd-seminar.CookifyUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = stravaforcooking.CookifyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -781,7 +677,7 @@
 			};
 			name = Debug;
 		};
-		D4BCC14A2AD04DD3004E3C6B /* Release */ = {
+		F356405D2AEEBA54005C9AA6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -789,7 +685,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "midd-seminar.CookifyUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = stravaforcooking.CookifyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -801,43 +697,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D4BCC1192AD04DC9004E3C6B /* Build configuration list for PBXProject "Cookify" */ = {
+		F356402C2AEEBA51005C9AA6 /* Build configuration list for PBXProject "Cookify" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D4BCC1402AD04DD3004E3C6B /* Debug */,
-				D4BCC1412AD04DD3004E3C6B /* Release */,
+				F35640532AEEBA54005C9AA6 /* Debug */,
+				F35640542AEEBA54005C9AA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4BCC1422AD04DD3004E3C6B /* Build configuration list for PBXNativeTarget "Cookify" */ = {
+		F35640552AEEBA54005C9AA6 /* Build configuration list for PBXNativeTarget "Cookify" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D4BCC1432AD04DD3004E3C6B /* Debug */,
-				D4BCC1442AD04DD3004E3C6B /* Release */,
+				F35640562AEEBA54005C9AA6 /* Debug */,
+				F35640572AEEBA54005C9AA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4BCC1452AD04DD3004E3C6B /* Build configuration list for PBXNativeTarget "CookifyTests" */ = {
+		F35640582AEEBA54005C9AA6 /* Build configuration list for PBXNativeTarget "CookifyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D4BCC1462AD04DD3004E3C6B /* Debug */,
-				D4BCC1472AD04DD3004E3C6B /* Release */,
+				F35640592AEEBA54005C9AA6 /* Debug */,
+				F356405A2AEEBA54005C9AA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4BCC1482AD04DD3004E3C6B /* Build configuration list for PBXNativeTarget "CookifyUITests" */ = {
+		F356405B2AEEBA54005C9AA6 /* Build configuration list for PBXNativeTarget "CookifyUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D4BCC1492AD04DD3004E3C6B /* Debug */,
-				D4BCC14A2AD04DD3004E3C6B /* Release */,
+				F356405C2AEEBA54005C9AA6 /* Debug */,
+				F356405D2AEEBA54005C9AA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D4BCC1162AD04DC9004E3C6B /* Project object */;
+	rootObject = F35640292AEEBA51005C9AA6 /* Project object */;
 }
