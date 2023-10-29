@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F33690502AEED25700250317 /* CookifyTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F336904F2AEED25700250317 /* CookifyTabView.swift */; };
+		F33690522AEED2C900250317 /* RecordRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33690512AEED2C900250317 /* RecordRecipeView.swift */; };
+		F33690542AEED2D600250317 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33690532AEED2D600250317 /* AccountView.swift */; };
+		F33690562AEED2E000250317 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33690552AEED2E000250317 /* FeedView.swift */; };
 		F33ACA8A2AEECB3300F9742F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33ACA6E2AEECB3300F9742F /* Assets.xcassets */; };
 		F33ACA8B2AEECB3300F9742F /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33ACA732AEECB3300F9742F /* SignUpViewModel.swift */; };
 		F33ACA8C2AEECB3300F9742F /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33ACA752AEECB3300F9742F /* SignUpRequest.swift */; };
@@ -44,6 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F336904F2AEED25700250317 /* CookifyTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookifyTabView.swift; sourceTree = "<group>"; };
+		F33690512AEED2C900250317 /* RecordRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordRecipeView.swift; sourceTree = "<group>"; };
+		F33690532AEED2D600250317 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		F33690552AEED2E000250317 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		F33ACA6E2AEECB3300F9742F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F33ACA732AEECB3300F9742F /* SignUpViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		F33ACA752AEECB3300F9742F /* SignUpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
@@ -91,6 +99,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F336904B2AEED0DE00250317 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				F33690552AEED2E000250317 /* FeedView.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		F336904C2AEED1C200250317 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				F336904F2AEED25700250317 /* CookifyTabView.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		F336904D2AEED21A00250317 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				F33690532AEED2D600250317 /* AccountView.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		F336904E2AEED22100250317 /* RecordRecipe */ = {
+			isa = PBXGroup;
+			children = (
+				F33690512AEED2C900250317 /* RecordRecipeView.swift */,
+			);
+			path = RecordRecipe;
+			sourceTree = "<group>";
+		};
 		F33ACA6C2AEECB3300F9742F /* Cookify */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +161,10 @@
 		F33ACA702AEECB3300F9742F /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				F336904E2AEED22100250317 /* RecordRecipe */,
+				F336904D2AEED21A00250317 /* Account */,
+				F336904C2AEED1C200250317 /* Tabs */,
+				F336904B2AEED0DE00250317 /* Feed */,
 				F33ACA712AEECB3300F9742F /* Signup */,
 				F33ACA7B2AEECB3300F9742F /* Login */,
 			);
@@ -400,14 +444,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F33ACA8B2AEECB3300F9742F /* SignUpViewModel.swift in Sources */,
+				F33690522AEED2C900250317 /* RecordRecipeView.swift in Sources */,
 				F33ACA942AEECB3300F9742F /* LoginAction.swift in Sources */,
 				F33ACA972AEECB3300F9742F /* ContentView.swift in Sources */,
 				F33ACA8D2AEECB3300F9742F /* SignUpResponse.swift in Sources */,
 				F33ACA932AEECB3300F9742F /* LoginScreen.swift in Sources */,
 				F33ACA902AEECB3300F9742F /* LoginViewModel.swift in Sources */,
 				F33ACA8C2AEECB3300F9742F /* SignUpRequest.swift in Sources */,
+				F33690562AEED2E000250317 /* FeedView.swift in Sources */,
 				F33ACA8F2AEECB3300F9742F /* SignUpAction.swift in Sources */,
+				F33690542AEED2D600250317 /* AccountView.swift in Sources */,
 				F33ACA962AEECB3300F9742F /* CookifyApp.swift in Sources */,
+				F33690502AEED25700250317 /* CookifyTabView.swift in Sources */,
 				F33ACA912AEECB3300F9742F /* LoginRequest.swift in Sources */,
 				F33ACA922AEECB3300F9742F /* LoginResponse.swift in Sources */,
 				F33ACA8E2AEECB3300F9742F /* SignUpScreen.swift in Sources */,
