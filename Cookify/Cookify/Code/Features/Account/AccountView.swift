@@ -2,14 +2,12 @@ import SwiftUI
 
 struct AccountView: View {
     
+    @StateObject var viewModel = AccountViewModel()
+    
     var body: some View {
-        
         NavigationStack {
-            
             VStack {
-                
                 HStack {
-                    
                     Text("username")
                         .fontWeight(.bold)
                         .padding(.leading, 15)
