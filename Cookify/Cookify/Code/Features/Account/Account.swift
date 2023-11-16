@@ -18,6 +18,6 @@ struct Account: Codable {
     let following: [Int]
     
     //array of post objects
-    let Posts: [Post]
+    let Posts: [PostModel]
 
 }

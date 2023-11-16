@@ -59,8 +59,6 @@ struct FeedView: View {
                                 .aspectRatio(contentMode: .fit)
                         }
                     }
-                    postCard()
-
                     .background(Color(red: 0.996, green: 0.961, blue: 0.929))
                 }
                 .listStyle(.plain)

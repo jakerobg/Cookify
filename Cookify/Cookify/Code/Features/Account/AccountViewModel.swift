@@ -9,6 +9,6 @@ import Foundation
 
 final class AccountViewModel: ObservableObject {
     
-    /@Published AccountModel
+    //@Published AccountModel
 
 }
