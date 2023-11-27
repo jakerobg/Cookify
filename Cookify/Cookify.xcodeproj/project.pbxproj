@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC361FA52B0E8ED600B6FDAB /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC361FA42B0E8ED600B6FDAB /* FeedCell.swift */; };
 		D4F8DA422AF05A3E00A13C5B /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F8DA412AF05A3E00A13C5B /* SettingsScreen.swift */; };
 		F33690502AEED25700250317 /* CookifyTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F336904F2AEED25700250317 /* CookifyTabView.swift */; };
 		F33690522AEED2C900250317 /* RecordRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33690512AEED2C900250317 /* RecordRecipeView.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC361FA42B0E8ED600B6FDAB /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		D4F8DA412AF05A3E00A13C5B /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 		F336904F2AEED25700250317 /* CookifyTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookifyTabView.swift; sourceTree = "<group>"; };
 		F33690512AEED2C900250317 /* RecordRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordRecipeView.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				F33690552AEED2E000250317 /* FeedView.swift */,
+				AC361FA42B0E8ED600B6FDAB /* FeedCell.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -517,6 +520,7 @@
 				F39120FF2AF6A1C10062E45E /* AccountViewModel.swift in Sources */,
 				F33ACA8F2AEECB3300F9742F /* SignUpAction.swift in Sources */,
 				F33690542AEED2D600250317 /* AccountView.swift in Sources */,
+				AC361FA52B0E8ED600B6FDAB /* FeedCell.swift in Sources */,
 				D4F8DA422AF05A3E00A13C5B /* SettingsScreen.swift in Sources */,
 				F33ACA962AEECB3300F9742F /* CookifyApp.swift in Sources */,
 				F33690502AEED25700250317 /* CookifyTabView.swift in Sources */,

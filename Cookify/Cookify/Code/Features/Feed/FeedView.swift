@@ -33,7 +33,7 @@ struct MockData{
 struct postCard: View {
     var body: some View{
         Text("hello")
-        .listRowBackground(Color(red: 0.996, green: 0.961, blue: 0.929))
+            .listRowBackground(Color(red: 0.996, green: 0.961, blue: 0.929))
     }
 }
 
@@ -41,35 +41,20 @@ struct postCard: View {
 struct FeedView: View {
     var body: some View {
         NavigationView{
-            ZStack{
-                Color(red: 0.996, green: 0.961, blue: 0.929)
-                    .ignoresSafeArea()
-                List(MockData.samplePostList, id: \.id){ Post in
-                    VStack(alignment: .leading){
-                        
-                        Text(Post.postTitle)
-                            .font(.title)
-                            .fontWeight(.medium)
-                        Text(Post.description)
-                            .font(.headline)
-                            .fontWeight(.light)
-                        HStack{
-                            Image("JT-Chocolate-Chip-Cookies-articleLarge")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                        }
+            ScrollView{
+                LazyVStack{
+                    ForEach(0...10, id: \.self){ post in
+                        FeedCell()
                     }
-                    .background(Color(red: 0.996, green: 0.961, blue: 0.929))
                 }
-                .listStyle(.plain)
-                .scrollContentBackground(.hidden)
-                .background(Color(red: 0.996, green: 0.961, blue: 0.929))
-                .navigationTitle("What's Cooking:")
             }
+            .background(Color(red: 0.996, green: 0.961, blue: 0.929))
         }
     }
 }
-
-#Preview {
-    FeedView()
-}
+    
+    struct FeedView_Previews: PreviewProvider {
+        static var previews: some View {
+            FeedView()
+        }
+    }
