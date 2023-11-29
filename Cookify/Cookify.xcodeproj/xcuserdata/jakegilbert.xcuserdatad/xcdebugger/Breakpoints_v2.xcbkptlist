@@ -8,15 +8,15 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "4AF193F2-9DDA-4A7A-AC4C-CA7031E0FBB7"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cookify/Code/Features/Post/Post.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "PostModel"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "Post"
             landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>

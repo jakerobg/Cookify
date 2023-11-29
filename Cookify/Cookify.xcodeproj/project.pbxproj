@@ -27,12 +27,14 @@
 		F33ACA952AEECB3300F9742F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33ACA862AEECB3300F9742F /* Preview Assets.xcassets */; };
 		F33ACA962AEECB3300F9742F /* CookifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33ACA882AEECB3300F9742F /* CookifyApp.swift */; };
 		F33ACA972AEECB3300F9742F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33ACA892AEECB3300F9742F /* ContentView.swift */; };
+		F354D5B62B15952500F69107 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F354D5B52B15952500F69107 /* PostModel.swift */; };
+		F354D5B82B1596D500F69107 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F354D5B72B1596D500F69107 /* AccountModel.swift */; };
 		F35640462AEEBA54005C9AA6 /* CookifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35640452AEEBA54005C9AA6 /* CookifyTests.swift */; };
 		F35640502AEEBA54005C9AA6 /* CookifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F356404F2AEEBA54005C9AA6 /* CookifyUITests.swift */; };
 		F35640522AEEBA54005C9AA6 /* CookifyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35640512AEEBA54005C9AA6 /* CookifyUITestsLaunchTests.swift */; };
-		F39120FD2AF69C3A0062E45E /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39120FC2AF69C3A0062E45E /* Account.swift */; };
-		F39120FF2AF6A1C10062E45E /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39120FE2AF6A1C10062E45E /* AccountViewModel.swift */; };
-		F39121032AF6A51B0062E45E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39121022AF6A51B0062E45E /* Post.swift */; };
+		F39120FD2AF69C3A0062E45E /* AccountObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39120FC2AF69C3A0062E45E /* AccountObject.swift */; };
+		F3E2B1542B157573000914E5 /* JSONstuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E2B1532B157573000914E5 /* JSONstuff.swift */; };
+		F3F9E08D2B156B21007FC3FD /* USERS.json in Resources */ = {isa = PBXBuildFile; fileRef = F3F9E08C2B156B21007FC3FD /* USERS.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,15 +75,17 @@
 		F33ACA862AEECB3300F9742F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F33ACA882AEECB3300F9742F /* CookifyApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookifyApp.swift; sourceTree = "<group>"; };
 		F33ACA892AEECB3300F9742F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F354D5B52B15952500F69107 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		F354D5B72B1596D500F69107 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
 		F35640312AEEBA51005C9AA6 /* Cookify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cookify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F35640412AEEBA54005C9AA6 /* CookifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F35640452AEEBA54005C9AA6 /* CookifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookifyTests.swift; sourceTree = "<group>"; };
 		F356404B2AEEBA54005C9AA6 /* CookifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F356404F2AEEBA54005C9AA6 /* CookifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookifyUITests.swift; sourceTree = "<group>"; };
 		F35640512AEEBA54005C9AA6 /* CookifyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookifyUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		F39120FC2AF69C3A0062E45E /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
-		F39120FE2AF6A1C10062E45E /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
-		F39121022AF6A51B0062E45E /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		F39120FC2AF69C3A0062E45E /* AccountObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountObject.swift; sourceTree = "<group>"; };
+		F3E2B1532B157573000914E5 /* JSONstuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONstuff.swift; sourceTree = "<group>"; };
+		F3F9E08C2B156B21007FC3FD /* USERS.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = USERS.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,8 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				F33690532AEED2D600250317 /* AccountView.swift */,
-				F39120FC2AF69C3A0062E45E /* Account.swift */,
-				F39120FE2AF6A1C10062E45E /* AccountViewModel.swift */,
+				F39120FC2AF69C3A0062E45E /* AccountObject.swift */,
+				F354D5B72B1596D500F69107 /* AccountModel.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -199,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				F33ACA6E2AEECB3300F9742F /* Assets.xcassets */,
+				F3F9E08C2B156B21007FC3FD /* USERS.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -327,6 +332,7 @@
 			children = (
 				F33ACA882AEECB3300F9742F /* CookifyApp.swift */,
 				F33ACA892AEECB3300F9742F /* ContentView.swift */,
+				F3E2B1532B157573000914E5 /* JSONstuff.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -371,7 +377,7 @@
 		F39121002AF6A4FB0062E45E /* Post */ = {
 			isa = PBXGroup;
 			children = (
-				F39121022AF6A51B0062E45E /* Post.swift */,
+				F354D5B52B15952500F69107 /* PostModel.swift */,
 			);
 			path = Post;
 			sourceTree = "<group>";
@@ -482,6 +488,7 @@
 			files = (
 				F33ACA952AEECB3300F9742F /* Preview Assets.xcassets in Resources */,
 				F33ACA8A2AEECB3300F9742F /* Assets.xcassets in Resources */,
+				F3F9E08D2B156B21007FC3FD /* USERS.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,24 +514,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				F33ACA8B2AEECB3300F9742F /* SignUpViewModel.swift in Sources */,
-				F39121032AF6A51B0062E45E /* Post.swift in Sources */,
-				F39120FD2AF69C3A0062E45E /* Account.swift in Sources */,
+				F39120FD2AF69C3A0062E45E /* AccountObject.swift in Sources */,
 				F33690522AEED2C900250317 /* RecordRecipeView.swift in Sources */,
 				F33ACA942AEECB3300F9742F /* LoginAction.swift in Sources */,
 				F33ACA972AEECB3300F9742F /* ContentView.swift in Sources */,
 				F33ACA8D2AEECB3300F9742F /* SignUpResponse.swift in Sources */,
 				F33ACA932AEECB3300F9742F /* LoginScreen.swift in Sources */,
+				F3E2B1542B157573000914E5 /* JSONstuff.swift in Sources */,
 				F33ACA902AEECB3300F9742F /* LoginViewModel.swift in Sources */,
 				F33ACA8C2AEECB3300F9742F /* SignUpRequest.swift in Sources */,
 				F33690562AEED2E000250317 /* FeedView.swift in Sources */,
-				F39120FF2AF6A1C10062E45E /* AccountViewModel.swift in Sources */,
 				F33ACA8F2AEECB3300F9742F /* SignUpAction.swift in Sources */,
+				F354D5B62B15952500F69107 /* PostModel.swift in Sources */,
 				F33690542AEED2D600250317 /* AccountView.swift in Sources */,
 				AC361FA52B0E8ED600B6FDAB /* FeedCell.swift in Sources */,
 				D4F8DA422AF05A3E00A13C5B /* SettingsScreen.swift in Sources */,
 				F33ACA962AEECB3300F9742F /* CookifyApp.swift in Sources */,
 				F33690502AEED25700250317 /* CookifyTabView.swift in Sources */,
 				F33ACA912AEECB3300F9742F /* LoginRequest.swift in Sources */,
+				F354D5B82B1596D500F69107 /* AccountModel.swift in Sources */,
 				F33ACA922AEECB3300F9742F /* LoginResponse.swift in Sources */,
 				F33ACA8E2AEECB3300F9742F /* SignUpScreen.swift in Sources */,
 			);

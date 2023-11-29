@@ -8,6 +8,8 @@ extension View {
 }
 
 struct LoginScreen: View {
+    //account ENVRIONMENT OBJECT
+    @EnvironmentObject var accountObject: AccountObject
     
     // login view model holds email, password, and login actions
     @ObservedObject var viewModel: LoginViewModel = LoginViewModel()
@@ -67,16 +69,17 @@ struct LoginScreen: View {
                     
                     // login button
                     HStack(spacing: 20) {
-                        Button(
-                            action: viewModel.login,
-                            label: {
+                        Button{
+                            //Pass envrionemnt object to viewmodel - to POPULATE
+                            viewModel.login(with: accountObject)
+                        } label: {
                                 Text("login")
                                     .font(.system(size: 30))
                                     .frame(maxWidth: .infinity, maxHeight: 60)
                                     .foregroundColor(Color(red: 0.6, green: 0.655, blue: 0.6))
                                     .underline()
-                            }
-                        )
+                        }
+                        
                         
                         // signup button
                         NavigationLink(destination: SignUpScreen()) {

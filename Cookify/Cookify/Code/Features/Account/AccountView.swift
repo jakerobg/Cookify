@@ -2,7 +2,7 @@ import SwiftUI
 
 struct AccountView: View {
     
-    @StateObject var viewModel = AccountViewModel()
+    //@StateObject var viewModel = AccountViewModel()
     
     var body: some View {
         NavigationStack {

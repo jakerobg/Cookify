@@ -10,8 +10,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    //MAKE ACCOUNTOBJECT - environment object since amny views need access
+    @StateObject var account = AccountObject()
+    
+    
     var body: some View {
-        CookifyTabView()
+        LoginScreen()
+        .environmentObject(account)
     }
 }
 

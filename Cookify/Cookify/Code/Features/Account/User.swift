@@ -9,15 +9,15 @@
 import Foundation
 
 
-struct Account: Codable {
-    let username: String
-    let id: Int
+struct User: Codable {
+    var username = ""
+    var id = 0
     
     //Followers and following are arrays of other users' ids
-    let followers: [Int]
-    let following: [Int]
+    var followers = [Int]()
+    var following = [Int]()
     
     //array of post objects
-    let Posts: [PostModel]
+    var Posts = [PostModel]()
 
 }
