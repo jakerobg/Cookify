@@ -9,6 +9,8 @@ import Foundation
 import SwiftUI
 
 struct FeedCell: View{
+    //vars
+    let imageNames = ["JT-Chocolate-Chip-Cookies-articleLarge", "JT-Chocolate-Chip-Cookies-articleLarge","JT-Chocolate-Chip-Cookies-articleLarge"]
     var body: some View{
         VStack {
             //profile info + location info
@@ -44,45 +46,45 @@ struct FeedCell: View{
                     .padding(.trailing)
             }
             //recipe info
-            VStack(alignment: .leading){
-                DisclosureGroup("Recipe Info"){
-                    HStack{
-                        Text("Prep Time")
-                            .frame(maxWidth: .infinity)
-                            .fontWeight(.semibold)
-                            .underline()
-                        Text("Cook Time")
-                            .frame(maxWidth: .infinity)
-                            .fontWeight(.semibold)
-                            .underline()
-                        Text("Serves")
-                            .frame(maxWidth: .infinity)
-                            .fontWeight(.semibold)
-                            .underline()
-                            .padding(.trailing)
-                    }
-                    HStack{
-                        Text("20 min")
-                            .frame(maxWidth: .infinity)
-                        Text("40 hrs")
-                            .frame(maxWidth: .infinity)
-                        Text("4")
-                            .frame(maxWidth: .infinity)
-                            .padding(.trailing)
-                    }
+            DisclosureGroup("Recipe Info"){
+                HStack{
+                    Text("Prep Time")
+                        .frame(maxWidth: .infinity)
+                        .fontWeight(.semibold)
+                        .underline()
+                    Text("Cook Time")
+                        .frame(maxWidth: .infinity)
+                        .fontWeight(.semibold)
+                        .underline()
+                    Text("Serves")
+                        .frame(maxWidth: .infinity)
+                        .fontWeight(.semibold)
+                        .underline()
+                }
+                HStack{
+                    Text("20 min")
+                        .frame(maxWidth: .infinity)
+                    Text("40 hrs")
+                        .frame(maxWidth: .infinity)
+                    Text("4")
+                        .frame(maxWidth: .infinity)
                 }
             }
+            .padding(.trailing)
+            
             .font(.footnote)
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.leading)
-            //image
-            Image("JT-Chocolate-Chip-Cookies-articleLarge")
-                .resizable()
-                .scaledToFit()
-                .frame(maxWidth: 363)
-                .clipShape(Rectangle())
-                .cornerRadius(15)
-                .padding(.top, 2)
+            //image slider
+            ImageCarouselView(images: imageNames)
+            
+            //            Image("JT-Chocolate-Chip-Cookies-articleLarge")
+            //                .resizable()
+            //                .scaledToFit()
+            //                .frame(maxWidth: 363)
+            //                .clipShape(Rectangle())
+            //                .cornerRadius(15)
+            //                .padding(.top, 2)
             //buttons
             HStack{
                 Button {
@@ -97,13 +99,6 @@ struct FeedCell: View{
                     Image(systemName: "message")
                         .foregroundStyle(.black)
                 }
-                Button {
-                    print("Share")
-                } label: {
-                    Image(systemName: "square.and.arrow.up")
-                        .foregroundStyle(.black)
-                }
-                
                 Spacer()
             }
             .padding(.leading)
@@ -136,5 +131,25 @@ struct FeedCell: View{
 struct FeedCell_Previews: PreviewProvider {
     static var previews: some View{
         FeedCell()
+    }
+}
+
+//image carousel structure
+struct ImageCarouselView: View{
+    let images: [String]
+    var body: some View{
+        TabView{
+            ForEach(images, id: \.self){ imageName in
+                Image(imageName)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(maxWidth: 363)
+                    .clipShape(Rectangle())
+                    .cornerRadius(15)
+            }
+        }
+        .frame(maxHeight: 250)
+        .tabViewStyle(PageTabViewStyle())
+        .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
     }
 }

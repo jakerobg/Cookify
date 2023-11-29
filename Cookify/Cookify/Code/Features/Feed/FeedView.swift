@@ -45,6 +45,7 @@ struct FeedView: View {
                 LazyVStack{
                     ForEach(0...10, id: \.self){ post in
                         FeedCell()
+                            .frame(minHeight: 500)
                     }
                 }
             }
