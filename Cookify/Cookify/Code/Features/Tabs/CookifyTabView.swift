@@ -15,7 +15,9 @@ struct CookifyTabView: View {
                     Image(systemName: "square.stack")
                     Text("Feed")
                 }
-            RecordRecipeView()
+            RecordRecipeView(posting: <#RecipePosting#>,
+                             prep_timer: <#RecipeTimer#>,
+                             cook_timer: <#RecipeTimer#>)
                 .tabItem {
                     Image(systemName: "carrot")
                     Text("Record")
