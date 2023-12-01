@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		AC361FA52B0E8ED600B6FDAB /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC361FA42B0E8ED600B6FDAB /* FeedCell.swift */; };
+		ACAF2DB72B1A93CD002AC73B /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACAF2DB62B1A93CD002AC73B /* Property List.plist */; };
+		ACAF2DB82B1A93CD002AC73B /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACAF2DB62B1A93CD002AC73B /* Property List.plist */; };
+		ACAF2DB92B1A93CD002AC73B /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACAF2DB62B1A93CD002AC73B /* Property List.plist */; };
 		D4CB95002B17910A004D0B04 /* RecordRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB94FF2B17910A004D0B04 /* RecordRecipeView.swift */; };
 		D4CB95022B17917D004D0B04 /* RecordRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB95012B17917D004D0B04 /* RecordRecipe.swift */; };
 		D4CB95042B1791A4004D0B04 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB95032B1791A4004D0B04 /* ImagePicker.swift */; };
@@ -88,6 +91,7 @@
 
 /* Begin PBXFileReference section */
 		AC361FA42B0E8ED600B6FDAB /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		ACAF2DB62B1A93CD002AC73B /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 		D4CB94FF2B17910A004D0B04 /* RecordRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordRecipeView.swift; sourceTree = "<group>"; };
 		D4CB95012B17917D004D0B04 /* RecordRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordRecipe.swift; sourceTree = "<group>"; };
 		D4CB95032B1791A4004D0B04 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
@@ -262,6 +266,7 @@
 			children = (
 				F33ACA6E2AEECB3300F9742F /* Assets.xcassets */,
 				F3F9E08C2B156B21007FC3FD /* USERS.json */,
+				ACAF2DB62B1A93CD002AC73B /* Property List.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -582,6 +587,7 @@
 				F33ACA952AEECB3300F9742F /* Preview Assets.xcassets in Resources */,
 				F30F48532B18D6540007BF4F /* GoogleService-Info.plist in Resources */,
 				F33ACA8A2AEECB3300F9742F /* Assets.xcassets in Resources */,
+				ACAF2DB72B1A93CD002AC73B /* Property List.plist in Resources */,
 				F3F9E08D2B156B21007FC3FD /* USERS.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,6 +596,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACAF2DB82B1A93CD002AC73B /* Property List.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +604,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACAF2DB92B1A93CD002AC73B /* Property List.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
