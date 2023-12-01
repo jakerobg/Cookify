@@ -4,6 +4,9 @@ struct AccountView: View {
     
     //@StateObject var viewModel = AccountViewModel()
     
+    @Binding var showLoginView: Bool
+    
+    
     var body: some View {
         NavigationStack {
             VStack {
@@ -16,7 +19,7 @@ struct AccountView: View {
                     
                     Spacer()
                               
-                    NavigationLink(destination: SettingsScreen()) {
+                    NavigationLink(destination: SettingsScreen(showLoginView: $showLoginView)) {
                         Image(systemName: "gear")
                             .resizable().aspectRatio(contentMode: .fit)
                             .foregroundColor(Color(red: 0.353, green: 0.388, blue: 0.388))
@@ -86,5 +89,5 @@ struct AccountView: View {
 }
 
 #Preview {
-    AccountView()
+    AccountView(showLoginView: .constant(false))
 }

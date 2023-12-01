@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct CookifyTabView: View {
+    
+    //pass down bool to settings screen to log user out
+    @Binding var showLoginView: Bool
+    
     var body: some View {
         TabView{
             FeedView()
@@ -15,14 +19,12 @@ struct CookifyTabView: View {
                     Image(systemName: "square.stack")
                     Text("Feed")
                 }
-            RecordRecipeView(posting: <#RecipePosting#>,
-                             prep_timer: <#RecipeTimer#>,
-                             cook_timer: <#RecipeTimer#>)
+            RecordRecipeView()
                 .tabItem {
                     Image(systemName: "carrot")
                     Text("Record")
                 }
-            AccountView()
+            AccountView(showLoginView: $showLoginView)
                 .tabItem {
                     Image(systemName: "person")
                     Text("Profile")
@@ -32,5 +34,5 @@ struct CookifyTabView: View {
 }
 
 #Preview {
-    CookifyTabView()
+    CookifyTabView(showLoginView: .constant(false))
 }

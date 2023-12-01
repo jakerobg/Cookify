@@ -8,14 +8,14 @@ extension View {
 }
 
 struct LoginScreen: View {
-    //account ENVRIONMENT OBJECT
-    @EnvironmentObject var accountObject: AccountObject
     
     // login view model holds email, password, and login actions
     @ObservedObject var viewModel: LoginViewModel = LoginViewModel()
     
     // state variable to see whether form is login or singup
     @State private var signUp = false
+    
+    @Binding var showLoginView: Bool
     
     var body: some View {
         
@@ -70,8 +70,10 @@ struct LoginScreen: View {
                     // login button
                     HStack(spacing: 20) {
                         Button{
-                            //Pass envrionemnt object to viewmodel - to POPULATE
-                            viewModel.login(with: accountObject)
+                            //LOGIN USING FIREBASE AUTH - in Authentication/AuthenticationManager
+                            viewModel.login()
+                            showLoginView = false
+
                         } label: {
                                 Text("login")
                                     .font(.system(size: 30))
@@ -103,6 +105,6 @@ struct LoginScreen: View {
 
 struct LoginScreen_Previews: PreviewProvider {
     static var previews: some View {
-        LoginScreen()
+        LoginScreen(showLoginView: .constant(false))
     }
 }

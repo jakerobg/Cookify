@@ -4,11 +4,11 @@ import PhotosUI
 struct RecordRecipeView: View {
         
     // posting function object
-    @ObservedObject var posting: RecipePosting
+    @ObservedObject var posting: RecipePosting = RecipePosting()
     
     // timer objects
-    @ObservedObject var prep_timer: RecipeTimer
-    @ObservedObject var cook_timer: RecipeTimer
+    @ObservedObject var prep_timer: RecipeTimer = RecipeTimer()
+    @ObservedObject var cook_timer: RecipeTimer = RecipeTimer()
     
     // photo picker class
     @StateObject var imagePicker = ImagePicker()

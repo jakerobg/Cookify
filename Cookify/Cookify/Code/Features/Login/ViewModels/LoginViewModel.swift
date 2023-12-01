@@ -3,15 +3,41 @@ import Foundation
 //make a codable struct to get data from json THEN populate env. obj
 
 
-
-class LoginViewModel: ObservableObject {
+@MainActor
+final class LoginViewModel: ObservableObject {
     
     @Published var email: String = ""
     @Published var password: String = ""
     
     
+    
+    func login() {
+        guard !email.isEmpty, !password.isEmpty else{
+            print("NO EMAIL OR PASSWORD ENTERED")
+            return
+        }
+        
+        Task {
+            do{
+                let user = try await AuthenticationManager.shared.signInExistingUser(email: email, password: password)
+                print("LOGGED IN SUCCESSFULLY")
+                print(user)
+            } catch {
+                print("ERROR: \(error)")
+            }
+        }
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     //when user hits login button, populates environment object
-    func login(with accountObject: AccountObject){
+    func loginOLD(with accountObject: AccountObject){
         
         var accountList = [AccountModel]()
         print(email)

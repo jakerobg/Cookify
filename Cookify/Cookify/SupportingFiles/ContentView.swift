@@ -8,18 +8,36 @@
 
 
 import SwiftUI
+import Firebase
 
 struct ContentView: View {
     
     //MAKE ACCOUNTOBJECT - environment object since amny views need access
-    @StateObject var account = AccountObject()
+    //@StateObject var account = AccountObject()
     
+    @State private var showLoginView: Bool = false
     
     var body: some View {
-        LoginScreen()
-        .environmentObject(account)
+        ZStack {
+            NavigationStack {
+                CookifyTabView(showLoginView: $showLoginView)
+            }
+        }
+        //show tab view if user logged in
+        .onAppear {
+            let authUser = try? AuthenticationManager.shared.getAuthenticatedUser()
+            self.showLoginView = authUser == nil
+        }
+        //otherwise, show login screen
+        .fullScreenCover(isPresented: $showLoginView){
+            NavigationStack {
+                LoginScreen(showLoginView: $showLoginView)
+            }
+        }
     }
 }
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

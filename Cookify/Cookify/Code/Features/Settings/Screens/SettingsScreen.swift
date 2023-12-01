@@ -11,8 +11,28 @@ struct SettingsScreen: View {
     
     @Environment(\.presentationMode) var presentationMode
     
+    @StateObject private var viewModel = SettingsViewModel()
+    
+    //CHECK IF USER IS SIGNED IN BINDING FROM CONTENTVIEW
+    @Binding var showLoginView: Bool
+    
     var body: some View {
-        Text("Settings")
+        Text("Settings").bold()
+        List {
+            Button("Log Out") {
+                Task {
+                    do {
+                        //log out and go back to login view
+                        try viewModel.logOut()
+                        showLoginView = true
+                    } catch {
+                        
+                    }
+                }
+            }
+        }
+        
+        
         
         // back to sign up button
         Text("back to profile")
@@ -27,5 +47,5 @@ struct SettingsScreen: View {
 }
 
 #Preview {
-    SettingsScreen()
+    SettingsScreen(showLoginView: .constant(false))
 }
