@@ -40,22 +40,24 @@ struct postCard: View {
 
 struct FeedView: View {
     var body: some View {
-        NavigationView{
+        NavigationStack{
             ScrollView{
                 LazyVStack{
                     ForEach(0...10, id: \.self){ post in
                         FeedCell()
-                            .frame(minHeight: 500)
+                            //.frame(minHeight:500)
                     }
                 }
             }
+            .navigationTitle("Feed")
             .background(Color(red: 0.996, green: 0.961, blue: 0.929))
         }
     }
 }
-    
-    struct FeedView_Previews: PreviewProvider {
-        static var previews: some View {
-            FeedView()
-        }
+
+struct FeedView_Previews: PreviewProvider {
+    static var previews: some View {
+        FeedView()
     }
+}
+
