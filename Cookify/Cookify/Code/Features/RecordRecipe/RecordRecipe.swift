@@ -3,9 +3,20 @@ import Foundation
 
 
 class RecipePosting: ObservableObject {
+    
+    @Published var meal_title: String = ""
+    @Published var description: String = ""
+    @Published var serves: Int = 0
+    @Published var poster: String = "currently harcoded"
+    @Published var location: String = "also harcoded"
 
-    func post() {
+    func post(prepTime: Int, cookTime: Int) {
         print("posting")
+        print("meal title: ", String($meal_title))
+        print("description: ", String($description))
+        print("servings: ", String($serves))
+        print("poster: ", String($poster))
+        print("location: ", String($location))
     }
     
 }

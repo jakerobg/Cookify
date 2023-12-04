@@ -4,7 +4,7 @@ import PhotosUI
 struct RecordRecipeView: View {
         
     // posting function object
-    @ObservedObject var posting: RecipePosting = RecipePosting()
+    @StateObject var posting: RecipePosting = RecipePosting()
     
     // timer objects
     @ObservedObject var prep_timer: RecipeTimer = RecipeTimer()
@@ -12,14 +12,6 @@ struct RecordRecipeView: View {
     
     // photo picker class
     @StateObject var imagePicker = ImagePicker()
-    let columns = [GridItem(.adaptive(minimum: 100))]
-    
-    // recipe information
-    @State private var meal_title: String = ""
-    @State private var description: String = ""
-    @State private var serves: Int = 0
-    @State private var poster: String = ""
-    @State private var location: String = ""
     
     private static var formatter: DateComponentsFormatter = {
         let formatter = DateComponentsFormatter()
@@ -48,7 +40,7 @@ struct RecordRecipeView: View {
                     
                     TextField(
                         "dish name",
-                        text: $meal_title
+                        text: $posting.meal_title
                     )
                     .padding(10)
                     .overlay(
@@ -58,7 +50,7 @@ struct RecordRecipeView: View {
                     
                     TextField(
                         "dish description",
-                        text: $description,
+                        text: $posting.description,
                         axis: .vertical
                     )
                     .lineLimit(3)
@@ -74,7 +66,7 @@ struct RecordRecipeView: View {
                             .font(.title2)
                             .foregroundStyle(Color(red: 0.353, green: 0.388, blue: 0.388))
                         
-                        Picker("", selection: $serves) {
+                        Picker("", selection: $posting.serves) {
                             ForEach(1...10, id: \.self) {
                                 Text("\($0)")
                             }
@@ -164,15 +156,7 @@ struct RecordRecipeView: View {
                     Spacer()
                     
                     if !imagePicker.images.isEmpty {
-                        
-//                        LazyVGrid(columns: columns, spacing: 20) {
-//                            ForEach(0..<imagePicker.images.count, id: \.self) { index in
-//                                imagePicker.images[index]
-//                                    .resizable()
-//                                    .scaledToFit()
-//                            }
-//                        }
-                        
+                                
                         ScrollView(.horizontal) {
                             HStack {
                                 ForEach(0..<imagePicker.images.count, id: \.self) { index in
@@ -195,7 +179,7 @@ struct RecordRecipeView: View {
                     Spacer()
                     
                     Button(action: {
-                        posting.post()
+                        posting.post(prepTime: Int(prep_timer.elapsedTime), cookTime: Int(cook_timer.elapsedTime))
                     }) {
                         Text("Serve!")
                             .fontWeight(.bold)
