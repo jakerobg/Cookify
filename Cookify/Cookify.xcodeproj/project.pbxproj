@@ -15,6 +15,8 @@
 		D4CB95022B17917D004D0B04 /* RecordRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB95012B17917D004D0B04 /* RecordRecipe.swift */; };
 		D4CB95042B1791A4004D0B04 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB95032B1791A4004D0B04 /* ImagePicker.swift */; };
 		D4F8DA422AF05A3E00A13C5B /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F8DA412AF05A3E00A13C5B /* SettingsScreen.swift */; };
+		F304FBDD2B1CF8F000D8C886 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304FBDC2B1CF8F000D8C886 /* ProfileViewModel.swift */; };
+		F304FBE02B1CFC2000D8C886 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304FBDF2B1CFC2000D8C886 /* UserManager.swift */; };
 		F30F48532B18D6540007BF4F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F30F48522B18D6540007BF4F /* GoogleService-Info.plist */; };
 		F31F1D7B2B18DCA30069F7C0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F31F1D7A2B18DCA30069F7C0 /* FirebaseAnalytics */; };
 		F31F1D7D2B18DCA30069F7C0 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = F31F1D7C2B18DCA30069F7C0 /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -45,7 +47,7 @@
 		F31F1DAF2B18DCA40069F7C0 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = F31F1DAE2B18DCA40069F7C0 /* FirebaseStorageCombine-Community */; };
 		F31F1DB12B1902B50069F7C0 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31F1DB02B1902B50069F7C0 /* AuthenticationManager.swift */; };
 		F33690502AEED25700250317 /* CookifyTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F336904F2AEED25700250317 /* CookifyTabView.swift */; };
-		F33690542AEED2D600250317 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33690532AEED2D600250317 /* AccountView.swift */; };
+		F33690542AEED2D600250317 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33690532AEED2D600250317 /* ProfileView.swift */; };
 		F33690562AEED2E000250317 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33690552AEED2E000250317 /* FeedView.swift */; };
 		F33ACA8A2AEECB3300F9742F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33ACA6E2AEECB3300F9742F /* Assets.xcassets */; };
 		F33ACA8B2AEECB3300F9742F /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33ACA732AEECB3300F9742F /* SignUpViewModel.swift */; };
@@ -62,7 +64,7 @@
 		F33ACA962AEECB3300F9742F /* CookifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33ACA882AEECB3300F9742F /* CookifyApp.swift */; };
 		F33ACA972AEECB3300F9742F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33ACA892AEECB3300F9742F /* ContentView.swift */; };
 		F354D5B62B15952500F69107 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F354D5B52B15952500F69107 /* PostModel.swift */; };
-		F354D5B82B1596D500F69107 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F354D5B72B1596D500F69107 /* AccountModel.swift */; };
+		F354D5B82B1596D500F69107 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F354D5B72B1596D500F69107 /* UserModel.swift */; };
 		F35640462AEEBA54005C9AA6 /* CookifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35640452AEEBA54005C9AA6 /* CookifyTests.swift */; };
 		F35640502AEEBA54005C9AA6 /* CookifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F356404F2AEEBA54005C9AA6 /* CookifyUITests.swift */; };
 		F35640522AEEBA54005C9AA6 /* CookifyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35640512AEEBA54005C9AA6 /* CookifyUITestsLaunchTests.swift */; };
@@ -96,10 +98,12 @@
 		D4CB95012B17917D004D0B04 /* RecordRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordRecipe.swift; sourceTree = "<group>"; };
 		D4CB95032B1791A4004D0B04 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		D4F8DA412AF05A3E00A13C5B /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		F304FBDC2B1CF8F000D8C886 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		F304FBDF2B1CFC2000D8C886 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		F30F48522B18D6540007BF4F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F31F1DB02B1902B50069F7C0 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		F336904F2AEED25700250317 /* CookifyTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookifyTabView.swift; sourceTree = "<group>"; };
-		F33690532AEED2D600250317 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		F33690532AEED2D600250317 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		F33690552AEED2E000250317 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		F33ACA6E2AEECB3300F9742F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F33ACA732AEECB3300F9742F /* SignUpViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
@@ -107,7 +111,7 @@
 		F33ACA762AEECB3300F9742F /* SignUpResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpResponse.swift; sourceTree = "<group>"; };
 		F33ACA782AEECB3300F9742F /* SignUpScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
 		F33ACA7A2AEECB3300F9742F /* SignUpAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpAction.swift; sourceTree = "<group>"; };
-		F33ACA7D2AEECB3300F9742F /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F33ACA7D2AEECB3300F9742F /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F33ACA7F2AEECB3300F9742F /* LoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		F33ACA802AEECB3300F9742F /* LoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		F33ACA822AEECB3300F9742F /* LoginScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
@@ -116,7 +120,7 @@
 		F33ACA882AEECB3300F9742F /* CookifyApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookifyApp.swift; sourceTree = "<group>"; };
 		F33ACA892AEECB3300F9742F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F354D5B52B15952500F69107 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
-		F354D5B72B1596D500F69107 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
+		F354D5B72B1596D500F69107 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		F35640312AEEBA51005C9AA6 /* Cookify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cookify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F35640412AEEBA54005C9AA6 /* CookifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F35640452AEEBA54005C9AA6 /* CookifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookifyTests.swift; sourceTree = "<group>"; };
@@ -198,6 +202,14 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
+		F304FBDE2B1CFC1100D8C886 /* Firestore */ = {
+			isa = PBXGroup;
+			children = (
+				F304FBDF2B1CFC2000D8C886 /* UserManager.swift */,
+			);
+			path = Firestore;
+			sourceTree = "<group>";
+		};
 		F30F48512B18D3FE0007BF4F /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,9 +245,10 @@
 		F336904D2AEED21A00250317 /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				F33690532AEED2D600250317 /* AccountView.swift */,
+				F33690532AEED2D600250317 /* ProfileView.swift */,
 				F39120FC2AF69C3A0062E45E /* AccountObject.swift */,
-				F354D5B72B1596D500F69107 /* AccountModel.swift */,
+				F354D5B72B1596D500F69107 /* UserModel.swift */,
+				F304FBDC2B1CF8F000D8C886 /* ProfileViewModel.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -274,6 +287,7 @@
 		F33ACA6F2AEECB3300F9742F /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				F304FBDE2B1CFC1100D8C886 /* Firestore */,
 				F30F48512B18D3FE0007BF4F /* Authentication */,
 				F33ACA702AEECB3300F9742F /* Features */,
 			);
@@ -617,6 +631,7 @@
 			files = (
 				F33ACA8B2AEECB3300F9742F /* SignUpViewModel.swift in Sources */,
 				F39120FD2AF69C3A0062E45E /* AccountObject.swift in Sources */,
+				F304FBE02B1CFC2000D8C886 /* UserManager.swift in Sources */,
 				F33ACA942AEECB3300F9742F /* LoginAction.swift in Sources */,
 				D4CB95002B17910A004D0B04 /* RecordRecipeView.swift in Sources */,
 				F33ACA972AEECB3300F9742F /* ContentView.swift in Sources */,
@@ -630,14 +645,15 @@
 				F354D5B62B15952500F69107 /* PostModel.swift in Sources */,
 				F31F1DB12B1902B50069F7C0 /* AuthenticationManager.swift in Sources */,
 				D4CB95022B17917D004D0B04 /* RecordRecipe.swift in Sources */,
-				F33690542AEED2D600250317 /* AccountView.swift in Sources */,
+				F33690542AEED2D600250317 /* ProfileView.swift in Sources */,
 				AC361FA52B0E8ED600B6FDAB /* FeedCell.swift in Sources */,
 				D4F8DA422AF05A3E00A13C5B /* SettingsScreen.swift in Sources */,
 				F33ACA962AEECB3300F9742F /* CookifyApp.swift in Sources */,
 				F33690502AEED25700250317 /* CookifyTabView.swift in Sources */,
 				F33ACA912AEECB3300F9742F /* LoginRequest.swift in Sources */,
 				F3EEBC872B1941CF0067FA1B /* SettingsViewModel.swift in Sources */,
-				F354D5B82B1596D500F69107 /* AccountModel.swift in Sources */,
+				F304FBDD2B1CF8F000D8C886 /* ProfileViewModel.swift in Sources */,
+				F354D5B82B1596D500F69107 /* UserModel.swift in Sources */,
 				D4CB95042B1791A4004D0B04 /* ImagePicker.swift in Sources */,
 				F33ACA922AEECB3300F9742F /* LoginResponse.swift in Sources */,
 				F33ACA8E2AEECB3300F9742F /* SignUpScreen.swift in Sources */,

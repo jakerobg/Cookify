@@ -30,6 +30,7 @@ final class AuthenticationManager {
     
     
     //create a new user and return its STRUCT
+    @discardableResult
     func createUser(email: String, password: String) async throws -> AuthDataResultModel{
         let authDataResult = try await Auth.auth().createUser(withEmail: email, password: password)
         let result = AuthDataResultModel(user: authDataResult.user)
@@ -38,6 +39,7 @@ final class AuthenticationManager {
     }
     
     //sign in existing user
+    @discardableResult
     func signInExistingUser(email: String, password: String) async throws -> AuthDataResultModel {
         let authDataResult = try await Auth.auth().signIn(withEmail: email, password: password)
         let result = AuthDataResultModel(user: authDataResult.user)
@@ -59,6 +61,18 @@ final class AuthenticationManager {
         try Auth.auth().signOut()
     }
     
+    
+    func resetPassword(email: String) async throws{
+        try await Auth.auth().sendPasswordReset(withEmail: email)
+    }
+    
+    func delete() async throws {
+        guard let user = Auth.auth().currentUser else {
+            throw URLError(.badServerResponse)
+        }
+        
+        try await user.delete()
+    }
     
     
 }

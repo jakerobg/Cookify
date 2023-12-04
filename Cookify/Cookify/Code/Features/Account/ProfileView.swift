@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ProfileView: View {
     
-    @StateObject private var viewModel = AccountViewModel()
+    @StateObject private var viewModel = ProfileViewModel()
     
     @Binding var showLoginView: Bool
     

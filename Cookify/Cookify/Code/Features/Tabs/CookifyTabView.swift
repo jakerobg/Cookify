@@ -24,7 +24,7 @@ struct CookifyTabView: View {
                     Image(systemName: "carrot")
                     Text("Record")
                 }
-            AccountView(showLoginView: $showLoginView)
+            ProfileView(showLoginView: $showLoginView)
                 .tabItem {
                     Image(systemName: "person")
                     Text("Profile")

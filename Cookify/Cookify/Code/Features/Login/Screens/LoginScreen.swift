@@ -12,9 +12,6 @@ struct LoginScreen: View {
     // login view model holds email, password, and login actions
     @ObservedObject var viewModel: LoginViewModel = LoginViewModel()
     
-    // state variable to see whether form is login or singup
-    @State private var signUp = false
-    
     @Binding var showLoginView: Bool
     
     var body: some View {
@@ -71,11 +68,29 @@ struct LoginScreen: View {
                     HStack(spacing: 20) {
                         Button{
                             //LOGIN USING FIREBASE AUTH - in Authentication/AuthenticationManager
-                            viewModel.login()
-                            showLoginView = false
+                            Task {
+                                do {
+                                    try await viewModel.signup()
+                                    print("SIGN UP")
+                                    showLoginView = false
+                                } catch {
+                                    print("ERROR: \(error)")
+                                }
+                                
+                                do {
+                                    try await viewModel.login()
+                                    print("LOG IN")
+                                    showLoginView = false
+                                } catch {
+                                    print("ERROR: \(error)")
+                                }
+                                
+                                
+                               
+                            }
 
                         } label: {
-                                Text("login")
+                                Text("login / sign up")
                                     .font(.system(size: 30))
                                     .frame(maxWidth: .infinity, maxHeight: 60)
                                     .foregroundColor(Color(red: 0.6, green: 0.655, blue: 0.6))
@@ -83,14 +98,14 @@ struct LoginScreen: View {
                         }
                         
                         
-                        // signup button
-                        NavigationLink(destination: SignUpScreen()) {
-                            Text("sign up")
-                                .font(.system(size: 30))
-                                .frame(maxWidth: .infinity, maxHeight: 60)
-                                .foregroundColor(Color(red: 0.6, green: 0.655, blue: 0.6))
-                                .underline()
-                        }
+//                        // OLD SIGN UP BUTTON
+//                        NavigationLink(destination: SignUpScreen()) {
+//                            Text("sign up")
+//                                .font(.system(size: 30))
+//                                .frame(maxWidth: .infinity, maxHeight: 60)
+//                                .foregroundColor(Color(red: 0.6, green: 0.655, blue: 0.6))
+//                                .underline()
+//                        }
                     }
                     
                 }.padding(30) // padding around all elements

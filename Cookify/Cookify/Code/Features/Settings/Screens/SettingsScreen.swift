@@ -16,6 +16,9 @@ struct SettingsScreen: View {
     //CHECK IF USER IS SIGNED IN BINDING FROM CONTENTVIEW
     @Binding var showLoginView: Bool
     
+    @State private var showResetPasswordAlert = false
+
+    
     var body: some View {
         Text("Settings").bold()
         List {
@@ -26,9 +29,36 @@ struct SettingsScreen: View {
                         try viewModel.logOut()
                         showLoginView = true
                     } catch {
-                        
+                        print(error)
                     }
                 }
+            }
+            Button("Reset password") {
+                Task {
+                    do {
+                        showResetPasswordAlert = true
+                        try await viewModel.resetPassword()
+                    } catch {
+                        print(error)
+                    }
+                }
+            }
+            .alert(isPresented: $showResetPasswordAlert) {
+                Alert(title: Text("Password reset sent"))
+            }
+            
+            Button(role: .destructive) {
+                Task {
+                    do {
+                        try await viewModel.deleteAccount()
+                        showLoginView = true
+                    } catch {
+                        print(error)
+
+                    }
+                }
+            } label: {
+                Text("Delete Account")
             }
         }
         

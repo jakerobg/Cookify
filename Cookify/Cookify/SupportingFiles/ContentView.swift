@@ -12,9 +12,6 @@ import Firebase
 
 struct ContentView: View {
     
-    //MAKE ACCOUNTOBJECT - environment object since amny views need access
-    //@StateObject var account = AccountObject()
-    
     @State private var showLoginView: Bool = false
     
     var body: some View {
