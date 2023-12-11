@@ -1,19 +1,17 @@
 //
-//  AccountViewModel.swift
+//  FeedViewModel.swift
 //  Cookify
 //
-//  Created by jake gilbert on 12/3/23.
+//  Created by jake gilbert on 12/8/23.
 //
 
 import Foundation
-import FirebaseFirestore
-import FirebaseAuth
 
 
 @MainActor
-final class ProfileViewModel: ObservableObject {
+final class FeedViewModel: ObservableObject {
     
-    @Published var user = DBUser()
+    @Published var user: DBUser = DBUser()
     
     @Published var userPosts = [DBPost]()
     

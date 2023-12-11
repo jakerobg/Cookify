@@ -17,10 +17,13 @@ final class LoginViewModel: ObservableObject {
 //        }
         
         //first create new user IN AUTH
-        let AuthDataResult = try await AuthenticationManager.shared.createUser(email: email, password: password)
+        let authDataResult = try await AuthenticationManager.shared.createUser(email: email, password: password)
         
-        //then create new user IN FIRESTORE based on ID
-        try await UserManager.shared.createNewUser(auth: AuthDataResult)
+        //INIT a user model after creating auth - empty posts, following and followers
+        let user = DBUser(auth: authDataResult)
+        
+        //then push user object IN FIRESTORE based on Id
+        try await UserManager.shared.createNewUser(user: user)
         
     }
     
@@ -32,7 +35,6 @@ final class LoginViewModel: ObservableObject {
         
         //first log in with AUTH
         try await AuthenticationManager.shared.signInExistingUser(email: email, password: password)
-        
         
     }
 }

@@ -1,8 +1,13 @@
 import SwiftUI
 import PhotosUI
+import FirebaseAuth
+import FirebaseFirestore
 
 struct RecordRecipeView: View {
-        
+    
+    
+    @StateObject private var viewModel = RecordRecipeViewModel()
+
     // posting function object
     @StateObject var posting: RecipePosting = RecipePosting()
     
@@ -10,18 +15,13 @@ struct RecordRecipeView: View {
     @ObservedObject var prep_timer: RecipeTimer = RecipeTimer()
     @ObservedObject var cook_timer: RecipeTimer = RecipeTimer()
     
-    // photo picker class
-    @StateObject var imagePicker = ImagePicker()
+    let columns = [GridItem(.adaptive(minimum: 100))]
     
-    private static var formatter: DateComponentsFormatter = {
-        let formatter = DateComponentsFormatter()
-        formatter.unitsStyle = .positional
-        formatter.allowedUnits = [ .hour, .minute, .second ]
-        formatter.zeroFormattingBehavior = [ .pad ]
-        formatter.allowsFractionalUnits = true
-        return formatter
-    }()
+    //@State private var selectedItems = [PhotosPickerItem]()
     
+    
+
+      
     var body: some View {
         
         // background color vstack
@@ -40,7 +40,7 @@ struct RecordRecipeView: View {
                     
                     TextField(
                         "dish name",
-                        text: $posting.meal_title
+                        text: $viewModel.meal_title
                     )
                     .padding(10)
                     .overlay(
@@ -50,7 +50,7 @@ struct RecordRecipeView: View {
                     
                     TextField(
                         "dish description",
-                        text: $posting.description,
+                        text: $viewModel.description,
                         axis: .vertical
                     )
                     .lineLimit(3)
@@ -66,7 +66,7 @@ struct RecordRecipeView: View {
                             .font(.title2)
                             .foregroundStyle(Color(red: 0.353, green: 0.388, blue: 0.388))
                         
-                        Picker("", selection: $posting.serves) {
+                        Picker("", selection: $viewModel.serves) {
                             ForEach(1...10, id: \.self) {
                                 Text("\($0)")
                             }
@@ -76,7 +76,7 @@ struct RecordRecipeView: View {
                     }
                     
                     HStack {
-                        
+                    
                         VStack(spacing: 20) {
                             Text("Prep Timer")
                                 .fontWeight(.bold)
@@ -136,11 +136,8 @@ struct RecordRecipeView: View {
                     }.padding([.leading, .trailing, .bottom], 20)
                     
                     
-                    PhotosPicker(
-                        selection: $imagePicker.imageSelections,
-                        maxSelectionCount: 6,
-                        matching: .images
-                    ) {
+                    PhotosPicker(selection: $viewModel.imageSelections, maxSelectionCount: 1, matching: .images, photoLibrary: .shared())
+                    {
                         Text("Show the People!")
                             .fontWeight(.bold)
                             .font(.title2)
@@ -155,12 +152,20 @@ struct RecordRecipeView: View {
                     
                     Spacer()
                     
-                    if !imagePicker.images.isEmpty {
-                                
+                    if !$viewModel.images.isEmpty {
+                        
+//                        LazyVGrid(columns: columns, spacing: 20) {
+//                            ForEach(0..<imagePicker.images.count, id: \.self) { index in
+//                                imagePicker.images[index]
+//                                    .resizable()
+//                                    .scaledToFit()
+//                            }
+//                        }
+                        
                         ScrollView(.horizontal) {
                             HStack {
-                                ForEach(0..<imagePicker.images.count, id: \.self) { index in
-                                    let scaledImage = imagePicker.images[index]
+                                ForEach(0..<viewModel.images.count, id: \.self) { index in
+                                    let scaledImage = viewModel.images[index]
                                     scaledImage
                                         .resizable()
                                         .aspectRatio(
@@ -178,9 +183,47 @@ struct RecordRecipeView: View {
                     
                     Spacer()
                     
-                    Button(action: {
-                        posting.post(prepTime: Int(prep_timer.elapsedTime), cookTime: Int(cook_timer.elapsedTime))
-                    }) {
+                    Button{
+                        Task{
+                            do{
+                                try? await StorageManager.shared.deleteAll()
+
+                                print(self.elapsedTimeStr(timeInterval: self.prep_timer.elapsedTime))
+                                print(self.elapsedTimeStr(timeInterval: self.cook_timer.elapsedTime))
+                                
+                                //CREATE NEW POST ID REFERENCE
+                                let userId = try AuthenticationManager.shared.getAuthenticatedUser().uid
+                                let newPostId = try await PostManager.shared.newPostRef().documentID
+                                
+                                
+                                //UPLOAD IMAGES AND GET THEIR PATHS
+                                var imageURLS = [String]()
+                                for image in viewModel.imageSelections{
+                                    imageURLS.append(try await viewModel.saveImages(item: image, postId: newPostId, userId: userId))
+                                }
+                                
+                                //UPLOAD RECIPE WITH NEW POSTID AND PATHS
+                                if(imageURLS.count != 0){
+                                    try await viewModel.uploadRecipe(
+                                        prepTime: self.elapsedTimeStr(timeInterval: self.prep_timer.elapsedTime),
+                                        cookTime: self.elapsedTimeStr(timeInterval: self.cook_timer.elapsedTime),
+                                        postId: newPostId,
+                                        userId: userId,
+                                        imageURLS: imageURLS
+                                    )
+                                }
+                                else{
+                                    print("no image selected")
+                                }
+                                
+                                
+                            }
+                            catch{
+                                print(error)
+                            }
+                        }
+
+                    } label: {
                         Text("Serve!")
                             .fontWeight(.bold)
                             .font(.title)
@@ -205,6 +248,15 @@ struct RecordRecipeView: View {
         
     }
     
+    static var formatter: DateComponentsFormatter = {
+        let formatter = DateComponentsFormatter()
+        formatter.unitsStyle = .positional
+        formatter.allowedUnits = [ .hour, .minute, .second ]
+        formatter.zeroFormattingBehavior = [ .pad ]
+        formatter.allowsFractionalUnits = true
+        return formatter
+    }()
+    
     private var playPauseTextPrep: Text {
         return Text(self.prep_timer.isRunning ? "stop":"start")
             .fontWeight(.bold)
@@ -226,6 +278,6 @@ struct RecordRecipeView: View {
 
 struct StopwatchView_Previews: PreviewProvider {
     static var previews: some View {
-        RecordRecipeView(posting: RecipePosting(), prep_timer: RecipeTimer(), cook_timer: RecipeTimer())
+        RecordRecipeView()
     }
 }

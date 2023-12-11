@@ -24,6 +24,7 @@ struct ContentView: View {
         .onAppear {
             let authUser = try? AuthenticationManager.shared.getAuthenticatedUser()
             self.showLoginView = authUser == nil
+
         }
         //otherwise, show login screen
         .fullScreenCover(isPresented: $showLoginView){

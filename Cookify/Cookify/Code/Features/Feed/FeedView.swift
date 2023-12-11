@@ -39,18 +39,30 @@ struct postCard: View {
 
 
 struct FeedView: View {
+    
+    @StateObject var viewModel = FeedViewModel()
+    
     var body: some View {
         NavigationStack{
             ScrollView{
                 LazyVStack{
-                    ForEach(0...10, id: \.self){ post in
-                        FeedCell()
-                            //.frame(minHeight:500)
+                    ForEach(viewModel.userPosts, id: \.self){ post in
+                        FeedCell(post: post, user: viewModel.user)
+                        //Text(post.postId)
+                        //
+                        //.frame(minHeight:500)
                     }
                 }
             }
             .navigationTitle("Feed")
             .background(Color(red: 0.996, green: 0.961, blue: 0.929))
+        }
+        .task {
+            print("UPDATE")
+            try? await viewModel.getProfileFeed()
+            try? await viewModel.loadCurrentUser()
+            
+            print("EMAIL: \(viewModel.user.email)")
         }
     }
 }

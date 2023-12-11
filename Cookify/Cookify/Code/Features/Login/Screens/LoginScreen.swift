@@ -84,9 +84,6 @@ struct LoginScreen: View {
                                 } catch {
                                     print("ERROR: \(error)")
                                 }
-                                
-                                
-                               
                             }
 
                         } label: {
