@@ -3,13 +3,14 @@ import SwiftUI
 struct ProfileView: View {
     
     @StateObject var viewModel = ProfileViewModel()
+    @StateObject var addFriendsModel = AddFriendsModel()
     
     @Binding var showLoginView: Bool
 
     
     var body: some View {
         NavigationStack {
-            HStack() {
+            HStack(spacing: 10) {
                 Text("profile")
                     .fontWeight(.bold)
                     .padding(.leading, 30)
@@ -19,6 +20,14 @@ struct ProfileView: View {
                 
                 Spacer()
                 
+                NavigationLink(destination: AddFriendsView()) {
+                    Image(systemName: "plus.rectangle")
+                        .resizable().aspectRatio(contentMode: .fit)
+                        .foregroundColor(Color(red: 0.353, green: 0.388, blue: 0.388))
+                        .frame(width: 35, height: 35)
+                        .padding(.trailing, 15)
+                }
+                
                 NavigationLink(destination: SettingsScreen(showLoginView: $showLoginView)) {
                     Image(systemName: "gear")
                         .resizable().aspectRatio(contentMode: .fit)
@@ -27,6 +36,7 @@ struct ProfileView: View {
                         .padding(.trailing, 15)
                 }
             }.padding(.bottom, -10)
+            
             ScrollView{
                 VStack {
                     // top part (profile pic and name)

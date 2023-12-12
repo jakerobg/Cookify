@@ -12,11 +12,13 @@ class RecipePosting: ObservableObject {
 
     func post(prepTime: Int, cookTime: Int) {
         print("posting")
-        print("meal title: ", String($meal_title))
-        print("description: ", String($description))
-        print("servings: ", String($serves))
-        print("poster: ", String($poster))
-        print("location: ", String($location))
+        print("meal title: \(meal_title)")
+        print("description: \(description)")
+        print("servings: \(serves)")
+        print("poster: \(poster)")
+        print("location: \(location)")
+        print("prep time: \(prepTime)")
+        print("cook time: \(cookTime)")
     }
     
 }

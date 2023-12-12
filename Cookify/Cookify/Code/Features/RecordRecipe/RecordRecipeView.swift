@@ -14,13 +14,6 @@ struct RecordRecipeView: View {
     // timer objects
     @ObservedObject var prep_timer: RecipeTimer = RecipeTimer()
     @ObservedObject var cook_timer: RecipeTimer = RecipeTimer()
-    
-    let columns = [GridItem(.adaptive(minimum: 100))]
-    
-    //@State private var selectedItems = [PhotosPickerItem]()
-    
-    
-
       
     var body: some View {
         
@@ -153,15 +146,6 @@ struct RecordRecipeView: View {
                     Spacer()
                     
                     if !$viewModel.images.isEmpty {
-                        
-//                        LazyVGrid(columns: columns, spacing: 20) {
-//                            ForEach(0..<imagePicker.images.count, id: \.self) { index in
-//                                imagePicker.images[index]
-//                                    .resizable()
-//                                    .scaledToFit()
-//                            }
-//                        }
-                        
                         ScrollView(.horizontal) {
                             HStack {
                                 ForEach(0..<viewModel.images.count, id: \.self) { index in
