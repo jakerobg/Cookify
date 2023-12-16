@@ -38,20 +38,14 @@ struct FeedCell: View{
     @State var numComments = 0
         //@State public var listComments = [comment]()
     @State public var listComments = [comment(commentId: 0,
-                                              commentAccountImageURL: "JT-Chocolate-Chip-Cookies-articleLarge",
-                                              comment: "hehehe",
-                                              commentAccount: "jamie"),
-                                      comment(commentId: 1,
-                                              commentAccountImageURL: "JT-Chocolate-Chip-Cookies-articleLarge",
-                                              comment: "they are tasty",
-                                              commentAccount: "jake")
-                                     ]
+                                              commentAccountImageURL: "",
+                                              comment: "",
+                                              commentAccount: "")]
     //info describing someone's interactions with the post
     @State private var showingCommentSection = false
     @State private var liked = false
     //dummy images for now
-    let imageNames = ["JT-Chocolate-Chip-Cookies-articleLarge", "JT-Chocolate-Chip-Cookies-articleLarge","flour"]
-    let imageNameMock = "JT-Chocolate-Chip-Cookies-articleLarge"
+    
     var body: some View{
         //NavigationView{
         VStack {

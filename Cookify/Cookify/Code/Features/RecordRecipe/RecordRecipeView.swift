@@ -9,7 +9,7 @@ struct RecordRecipeView: View {
     @StateObject private var viewModel = RecordRecipeViewModel()
 
     // posting function object
-    @StateObject var posting: RecipePosting = RecipePosting()
+    //@StateObject var posting: RecipePosting = RecipePosting()
     
     // timer objects
     @ObservedObject var prep_timer: RecipeTimer = RecipeTimer()
